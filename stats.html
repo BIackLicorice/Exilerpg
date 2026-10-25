@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stats · Exile RPG Wiki</title><meta name="description" content="All 16 stats, with what each level gives, the level cap, how each one trains, the perks they unlock, and the passives you choose.">
+<link rel="icon" href="img/item_gear_journal.png"><link rel="stylesheet" href="wiki.css"></head>
+<body>
+<header><button id="menu" class="iconbtn" aria-label="Pages">☰</button>
+<a class="brand" href="index.html"><img src="img/item_gear_journal.png" alt=""><span>Exile RPG Wiki</span><small>pack v0.31.3</small></a>
+<div class="search"><input id="q" type="search" placeholder="Search the wiki  ( / )" autocomplete="off" aria-label="Search"><div id="res" class="results"></div></div>
+<button id="theme" class="iconbtn" aria-label="Light or dark" title="Light / dark">☀ / ☾</button></header>
+<div class="wrap"><nav class="side"><h4>Getting started</h4>
+<a href="index.html">Home</a>
+<a href="first-steps.html">First steps</a>
+<a href="the-journal.html">The Exile&#x27;s Journal</a>
+<a href="leveling.html">Leveling</a>
+<a href="coins-and-bank.html">Coins and the bank</a>
+<a href="quests.html">Quests</a>
+<a href="parties.html">Parties</a>
+<a href="mounts.html">Mounts</a>
+<a href="titles.html">Titles</a>
+<a href="death-and-safety.html">Death and safety</a>
+<a href="faq.html">FAQ</a>
+<h4>Classes &amp; stats</h4>
+<a href="classes.html">Classes</a>
+<a href="mage.html">Mage</a>
+<a href="archer.html">Archer</a>
+<a href="rogue.html">Rogue</a>
+<a href="warrior.html">Warrior</a>
+<a href="herald.html">Herald</a>
+<a href="skill-trees.html">Skill trees</a>
+<a href="abilities.html">Abilities</a>
+<a href="stats.html" class=cur>Stats</a>
+<a href="attributes.html">Attributes</a>
+<a href="prestige.html">Prestige</a>
+<h4>Gear &amp; forge</h4>
+<a href="gear.html">Gear</a>
+<a href="rarity.html">Rarity</a>
+<a href="weapons.html">Weapons</a>
+<a href="armour.html">Armour</a>
+<a href="sets.html">Sets</a>
+<a href="legendary-weapons.html">Legendary Weapons</a>
+<a href="relics.html">Extraordinary &amp; God&#x27;s Tool Weapons</a>
+<a href="orbs.html">Orbs</a>
+<a href="gems.html">Gems</a>
+<a href="forge.html">The Forge</a>
+<a href="ingredients.html">Ingredients &amp; Modifiers</a>
+<a href="amulets.html">Amulets</a></nav>
+<main><div class="crumb">Classes &amp; stats</div><h1>Stats</h1>
+<p class="lead">All 16 stats, with what each level gives, the level cap, how each one trains, the perks they unlock, and the passives you choose.</p>
+<h2 id="how-stats-work">How stats work</h2>
+<p>Exile RPG has <strong>16 stats</strong>. Each one has its own level and <strong>levels up by doing its thing</strong>. You get stronger at what you actually do: fight in melee and Might rises, sprint and Swiftness rises, mine and Mining rises.</p>
+<ul>
+<li><strong>Level = trained levels + attribute points you spent on it</strong>, up to the <strong>cap of 50</strong>.</li>
+<li><strong>Attribute points:</strong> every character level gives you <strong>1 attribute point</strong>. Spend it on any stat with <strong>[+1]</strong> or <strong>[+5]</strong> on the character sheet or on the stat's own page. A spent point is +1 level right away. (You also get 1 perk point per character level, for your <a href="skill-trees.html">perk tree</a>.)</li>
+<li><strong>Bonus levels</strong> (shown in aqua as <strong>+N</strong>) come from gear, sets, amulets, your perk tree and Herald buffs. They add to the stat's effect and can go <strong>past the cap</strong>. They don't unlock perks or passives and don't count towards <a href="prestige.html">prestige</a>.</li>
+<li><strong>What a stat does = (level + bonus levels) × its per-level value.</strong></li>
+<li>Stat effects, perks and passives only apply while you hold a real weapon (sword, axe, mace, trident, bow, crossbow or Exile RPG weapon). Bare-handed or holding a tool, you punch for exactly 1 heart.</li>
+</ul>
+<p>Open your <strong>character sheet</strong> by right-clicking your <a href="the-journal.html">Exile’s Journal</a>. Each stat has one row with its level, bonus levels, prestiges (✦), an XP bar, <strong>[+1]</strong> / <strong>[+5]</strong> when you have points, <strong>★</strong> when a passive is ready to choose, and <strong>MAX [✦]</strong> at the cap. Click a stat's name to open its page: its effect, how to train it, its perks and its passives. <strong>[✚ Bonuses]</strong> lists every bonus you have and where it comes from.</p>
+<h2 id="the-16-stats">The 16 stats</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Stat</th>
+<th>Each level gives</th>
+<th>At level 50</th>
+<th>Trains by</th>
+<th>Base training XP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❤ Vitality</td>
+<td>+1 max health (half a heart)</td>
+<td>+50 health (25 hearts)</td>
+<td>Taking damage and surviving</td>
+<td>2 per point of damage taken</td>
+</tr>
+<tr>
+<td>⚔ Might</td>
+<td>+0.4 melee damage</td>
+<td>+20 melee damage</td>
+<td>Dealing melee damage</td>
+<td>1 per point of melee damage. Needs 1.5× the XP per level</td>
+</tr>
+<tr>
+<td>⚡ Ferocity</td>
+<td>+0.04 attack speed</td>
+<td>+2.0 attack speed</td>
+<td>Killing mobs</td>
+<td>5 per kill</td>
+</tr>
+<tr>
+<td>➶ Precision</td>
+<td>+2% damage on arrows you shoot</td>
+<td>+100% arrow damage</td>
+<td>Hitting mobs with arrows</td>
+<td>6 per arrow hit</td>
+</tr>
+<tr>
+<td>✧ Arcana</td>
+<td>+4 max mana; class abilities scale with it</td>
+<td>+200 max mana</td>
+<td>Spending mana on abilities, enchanting</td>
+<td>1 per 5 mana spent, 5 per enchantment</td>
+</tr>
+<tr>
+<td>⛨ Fortitude</td>
+<td>+0.2 armour</td>
+<td>+10 armour</td>
+<td>Taking monster hits with a shield in your offhand</td>
+<td>2 per point of damage</td>
+</tr>
+<tr>
+<td>◆ Toughness</td>
+<td>+0.15 armour toughness (less damage from big hits)</td>
+<td>+7.5 armour toughness</td>
+<td>Taking big hits (3+ hearts)</td>
+<td>10 per big hit</td>
+</tr>
+<tr>
+<td>➹ Swiftness</td>
+<td>+0.5% move speed</td>
+<td>+25% move speed</td>
+<td>Sprinting</td>
+<td>1 per 10 blocks</td>
+</tr>
+<tr>
+<td>⚓ Steadfast</td>
+<td>+1.5% knockback resistance</td>
+<td>+75% knockback resistance</td>
+<td>Getting hit by hostile mobs</td>
+<td>3 per hit</td>
+</tr>
+<tr>
+<td>✦ Fortune</td>
+<td>+0.2 luck (better loot rolls)</td>
+<td>+10 luck</td>
+<td>Looting fresh chests, trading with villagers, enchanting</td>
+<td>25 per fresh chest, 6 per trade, 10 per enchantment</td>
+</tr>
+<tr>
+<td>⛏ Mining</td>
+<td>+0.4 mining speed with the right tool</td>
+<td>+20 mining speed</td>
+<td>Mining stone and ores</td>
+<td>1 per stone-type block, 5 per ore. Trains at half pace</td>
+</tr>
+<tr>
+<td>♣ Logging</td>
+<td>+1% chance a chopped log drops twice</td>
+<td>50%</td>
+<td>Chopping logs</td>
+<td>3 per log. Trains at half pace</td>
+</tr>
+<tr>
+<td>☘ Farming</td>
+<td>+1% chance a harvested crop drops an extra one</td>
+<td>50%</td>
+<td>Harvesting crops</td>
+<td>2 per crop (capped per minute)</td>
+</tr>
+<tr>
+<td>≈ Fishing</td>
+<td>+1% chance to reel in a second catch</td>
+<td>50%</td>
+<td>Catching fish</td>
+<td>10 per catch</td>
+</tr>
+<tr>
+<td>♨ Cooking</td>
+<td>+1% chance cooked food comes out doubled</td>
+<td>50%</td>
+<td>Cooking or crafting food</td>
+<td>3 per dish</td>
+</tr>
+<tr>
+<td>⚒ Blacksmithing</td>
+<td>Mastery: the rarity you forge and the best metal you may use</td>
+<td>Legendary (netherite)</td>
+<td>Forging gear at an anvil</td>
+<td>per forge. Trains 25% slower</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Blacksmithing mastery:</strong> levels 1-10 forge Common (copper), 11-21 Uncommon (iron), 22-32 Rare (gold), 33-43 Mythic (diamond), 44-50 Legendary (netherite). Forge ingredients drop from mining, logging, fishing and hunting, and modifiers from monsters and ores. See <a href="forge.html">Forge</a>.</p>
+<p><strong>Gathering bonuses</strong> (Logging, Farming, Fishing, Cooking) roll per item. The chance equals the stat's total level in %, so gear bonus levels count too.</p>
+<h2 id="training-speed">Training speed</h2>
+<p>The base training XP above is then adjusted:</p>
+<ul>
+<li><strong>Combat stats train at half speed:</strong> Vitality, Might, Ferocity, Precision, Arcana, Fortitude, Toughness and Steadfast.</li>
+<li><strong>Every stat except the five gathering stats and Blacksmithing</strong> (that is, the eight combat stats plus Swiftness and Fortune) also earns only <strong>two thirds</strong> of its XP.</li>
+<li><strong>Mining and Logging</strong> train at <strong>half pace</strong>.</li>
+<li><strong>Blacksmithing</strong> trains <strong>25% slower</strong>.</li>
+<li><strong>Your class's scaling stats train 25% faster</strong> (see <a href="classes.html">Classes</a>).</li>
+<li><strong>Prestige</strong> multiplies a stat's training XP: ×2 after one prestige, ×3 after two, and so on (see <a href="prestige.html">Prestige</a>).</li>
+<li>Some nodes and passives double training XP: Bountiful Life (tree) for all five gathering stats, and the Geologist, Arborist, Green Thumb, Angler, Gourmand and Apprentice passives for their own stat.</li>
+</ul>
+<p><strong>XP needed for the next level = 20 + 8 × your current level.</strong> Level 0 to 1 needs 20 XP, and 49 to 50 needs 412. <strong>Might</strong> needs 1.5 times as much: 30 + 12 × level.</p>
+<p>Leftover fractions are never lost. Small gains add up until they make a whole point. Training XP from every stat except the gathering stats and Blacksmithing also feeds your <strong>character level</strong>. See <a href="leveling.html">Leveling</a>.</p>
+<h2 id="perks">Perks</h2>
+<p>Each stat unlocks <strong>4 perks</strong> automatically at levels <strong>10, 20, 40 and 50</strong>. Only trained levels and spent points count. Gear bonus levels don't.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Stat</th>
+<th>Level 10</th>
+<th>Level 20</th>
+<th>Level 40</th>
+<th>Level 50</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vitality</td>
+<td><strong>Recovery</strong>: After 8s without taking damage you regenerate 1 health per second.</td>
+<td><strong>Second Wind</strong>: Below 30% health you get Regeneration II for 5s (60s cooldown).</td>
+<td><strong>Thick Blooded</strong>: Immune to Poison and Hunger.</td>
+<td><strong>Titan Heart</strong>: +10% max health.</td>
+</tr>
+<tr>
+<td>Might</td>
+<td><strong>Heavy Blows</strong>: Your melee hits knock enemies back further.</td>
+<td><strong>Bloodlust</strong>: Kills give Strength I for 4s.</td>
+<td><strong>Brutal Force</strong>: +10% melee damage.</td>
+<td><strong>Warlord</strong>: Kills heal you for 2 hearts.</td>
+</tr>
+<tr>
+<td>Ferocity</td>
+<td><strong>Adrenaline</strong>: Kills give Absorption I for 6s (10s cooldown).</td>
+<td><strong>Frenzy</strong>: Kills give Speed I for 4s.</td>
+<td><strong>Relentless</strong>: Permanent Haste I.</td>
+<td><strong>Rampage</strong>: 3 kills in quick succession give Strength II for 6s.</td>
+</tr>
+<tr>
+<td>Precision</td>
+<td><strong>Steady Aim</strong>: Arrows shot while sneaking deal +10% damage.</td>
+<td><strong>Swift Shot</strong>: Your arrows fly 15% faster (more range and damage).</td>
+<td><strong>Hamstring</strong>: Every 4th arrow you shoot (ability arrows count) is a hamstring arrow: what it hits is slowed (Slowness II 2 s) and weakened (Weakness I 3 s).</td>
+<td><strong>Deadeye</strong>: Arrows have a 15% chance to deal 50% more damage.</td>
+</tr>
+<tr>
+<td>Arcana</td>
+<td><strong>Mana Flow</strong>: +25% mana regeneration.</td>
+<td><strong>Spell Echo</strong>: Abilities have a 10% chance to cost no mana.</td>
+<td><strong>Arcane Mastery</strong>: +3 damage on every ability hit.</td>
+<td><strong>Archmage</strong>: Ability cooldowns are 15% shorter.</td>
+</tr>
+<tr>
+<td>Fortitude</td>
+<td><strong>Iron Skin</strong>: +1 armor.</td>
+<td><strong>Shield Wall</strong>: With a shield in your offhand, arrows and other projectiles that hit you deal 30% less.</td>
+<td><strong>Riposte</strong>: Being hit by a monster with a shield in your offhand gives Strength I for 3s.</td>
+<td><strong>Aegis</strong>: Being hit by a monster with a shield in your offhand heals 2 hearts (5s cooldown).</td>
+</tr>
+<tr>
+<td>Toughness</td>
+<td><strong>Hard Landing</strong>: -25% fall damage.</td>
+<td><strong>Unshaken</strong>: Taking a big hit gives Absorption I for 6s (30s cooldown).</td>
+<td><strong>Juggernaut</strong>: Immune to Slowness, Weakness and Mining Fatigue.</td>
+<td><strong>Colossus</strong>: +1 armor toughness and +50% explosion knockback resistance.</td>
+</tr>
+<tr>
+<td>Swiftness</td>
+<td><strong>Light Feet</strong>: You walk up full blocks without jumping.</td>
+<td><strong>Fleet Footed</strong>: Speed I while sprinting.</td>
+<td><strong>Dolphin Kick</strong>: Dolphin’s Grace while in water.</td>
+<td><strong>Windrunner</strong>: +10% jump height and 3 more blocks before fall damage.</td>
+</tr>
+<tr>
+<td>Steadfast</td>
+<td><strong>Rally</strong>: When a hostile mob hits you, 15% chance of Speed I and Strength I for 3s.</td>
+<td><strong>Rooted</strong>: +30% knockback resistance while sneaking.</td>
+<td><strong>Iron Will</strong>: Immune to Nausea, Blindness and Darkness.</td>
+<td><strong>Immovable</strong>: No knockback at all while sneaking.</td>
+</tr>
+<tr>
+<td>Fortune</td>
+<td><strong>Treasure Sense</strong>: Opening a fresh loot chest also gives a burst of experience.</td>
+<td><strong>Golden Touch</strong>: Kills have a 10% chance to drop 1-3 gold nuggets.</td>
+<td><strong>Haggler</strong>: Villagers treat you as a Hero of the Village (cheaper trades).</td>
+<td><strong>Midas</strong>: +1 luck, and kills have a 2% chance to drop an emerald.</td>
+</tr>
+<tr>
+<td>Mining</td>
+<td><strong>Prospector</strong>: Ores you mine have a 25% chance to drop bonus experience.</td>
+<td><strong>Night Miner</strong>: Night vision while below Y 0.</td>
+<td><strong>Vein Luck</strong>: Ores have an 8% chance to drop an extra ore.</td>
+<td><strong>Deep Delver</strong>: Haste II while below Y 0.</td>
+</tr>
+<tr>
+<td>Logging</td>
+<td><strong>Woodsman</strong>: Haste I while holding an axe.</td>
+<td><strong>Apple Picker</strong>: Chopped logs have a 5% chance to drop an apple.</td>
+<td><strong>Double Chop</strong>: Your bonus logs come in twos.</td>
+<td><strong>Heartwood</strong>: Chopped logs have a 1% chance to drop a golden apple.</td>
+</tr>
+<tr>
+<td>Farming</td>
+<td><strong>Seed Saver</strong>: Wheat and beetroot have a 15% chance to drop extra seeds.</td>
+<td><strong>Farmhand</strong>: Speed I while walking on farmland.</td>
+<td><strong>Bountiful</strong>: Your bonus harvests come in twos.</td>
+<td><strong>Golden Harvest</strong>: Crops have a 2% chance to drop a golden carrot.</td>
+</tr>
+<tr>
+<td>Fishing</td>
+<td><strong>Patient Angler</strong>: +1 luck while holding a fishing rod (better catches).</td>
+<td><strong>Fresh Catch</strong>: Catching a fish gives Regeneration II for 2s.</td>
+<td><strong>Treasure Hunter</strong>: Each catch has a 5% chance of a bonus treasure.</td>
+<td><strong>Kraken Favor</strong>: Conduit Power while in water.</td>
+</tr>
+<tr>
+<td>Cooking</td>
+<td><strong>Hearty Meal</strong>: Eating cooked food gives Regeneration I for 4s.</td>
+<td><strong>Well Fed</strong>: Eating cooked food gives Absorption I for 20s.</td>
+<td><strong>Master Chef</strong>: Your bonus dishes come in twos.</td>
+<td><strong>Gourmet</strong>: Eating cooked food gives Strength I for 10s.</td>
+</tr>
+<tr>
+<td>Blacksmithing</td>
+<td><strong>Careful Hands</strong>: Modifiers never fail when forged in.</td>
+<td><strong>Reclaimer</strong>: <strong>[Reclaim held piece]</strong> at the forge turns a piece you forged back into 1-3 of its ingots.</td>
+<td><strong>Masters Mark</strong>: Forged pieces carry your name and +1 to every affix roll.</td>
+<td><strong>Legend Smith</strong>: One extra modifier slot (7).</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="passives">Passives</h2>
+<p>Each stat also offers <strong>passives that you choose</strong>. At level <strong>15</strong> (Tier I) and level <strong>35</strong> (Tier II) you pick <strong>one of three</strong> on the stat's page. A <strong>★</strong> on the sheet means a choice is waiting.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Stat</th>
+<th>Tier</th>
+<th>Choice 1</th>
+<th>Choice 2</th>
+<th>Choice 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vitality</td>
+<td>I (15)</td>
+<td><strong>Hardy</strong>: +4 max health.</td>
+<td><strong>Mending</strong>: Regenerate about 1 health every 6 seconds.</td>
+<td><strong>Vital Surge</strong>: Kills heal you about 1.5 hearts.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Colossal Heart</strong>: +8 max health.</td>
+<td><strong>Undying</strong>: Dropping below 25% health gives Resistance I for 5s (90s cooldown).</td>
+<td><strong>Lifeleech</strong>: Melee hits on hostile mobs heal you a little.</td>
+</tr>
+<tr>
+<td>Might</td>
+<td>I (15)</td>
+<td><strong>Brawler</strong>: +1 melee damage.</td>
+<td><strong>Bully</strong>: Your melee hits knock enemies back further.</td>
+<td><strong>Sweeper</strong>: +50% sweeping attack damage.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Titan Grip</strong>: +2.5 melee damage.</td>
+<td><strong>Crushing Blows</strong>: Melee hits slow enemies (Slowness I, 2s).</td>
+<td><strong>Concussive Blows</strong>: Melee hits have a 15% chance to stun (Slowness IV and Weakness II, 2s).</td>
+</tr>
+<tr>
+<td>Ferocity</td>
+<td>I (15)</td>
+<td><strong>Quick Hands</strong>: +0.2 attack speed.</td>
+<td><strong>Bloodthirst</strong>: Kills give Haste I for 5s.</td>
+<td><strong>Predator</strong>: Speed I while a hostile mob is within 8 blocks.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Battle Trance</strong>: +0.4 attack speed.</td>
+<td><strong>Carnage</strong>: Kills give Speed II and Jump Boost II for 3s.</td>
+<td><strong>Whirling Fury</strong>: Strength I while 3 or more hostile mobs are within 6 blocks.</td>
+</tr>
+<tr>
+<td>Precision</td>
+<td>I (15)</td>
+<td><strong>Eagle Eye</strong>: +10% arrow damage.</td>
+<td><strong>Quiver Saver</strong>: 25% chance to get your arrow back when you shoot.</td>
+<td><strong>Hunter Mark</strong>: Arrow hits make the target glow for 5s.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Sharpshooter</strong>: +25% arrow damage.</td>
+<td><strong>Pinning Shot</strong>: Arrow hits slow the target (Slowness II, 2s).</td>
+<td><strong>Crippling Shot</strong>: Arrow hits have a 25% chance to weaken the target (Weakness I, 4s).</td>
+</tr>
+<tr>
+<td>Arcana</td>
+<td>I (15)</td>
+<td><strong>Deep Reserves</strong>: +30 max mana.</td>
+<td><strong>Quick Recovery</strong>: +1 mana per second.</td>
+<td><strong>Spell Siphon</strong>: Kills restore 10 mana.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Battle Mage</strong>: Melee hits on hostile mobs restore 3 mana.</td>
+<td><strong>Arcane Surge</strong>: +5 ability damage while above 80% mana.</td>
+<td><strong>Ley Ward</strong>: Taking a big hit spends 20 mana to give Absorption II for 5s.</td>
+</tr>
+<tr>
+<td>Fortitude</td>
+<td>I (15)</td>
+<td><strong>Thick Plating</strong>: +1 armor.</td>
+<td><strong>Shield Bearer</strong>: Being hit by a monster with a shield in your offhand gives Speed I for 3s.</td>
+<td><strong>Bracer</strong>: Being hit by a monster with a shield in your offhand heals you a little.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Bastion</strong>: +2 armor.</td>
+<td><strong>Spiked Shield</strong>: Being hit by a monster with a shield in your offhand deals 3 damage to hostile mobs within 4 blocks.</td>
+<td><strong>Stalwart</strong>: +2 armor while sneaking.</td>
+</tr>
+<tr>
+<td>Toughness</td>
+<td>I (15)</td>
+<td><strong>Tough Hide</strong>: +0.5 armor toughness.</td>
+<td><strong>Fire Hardened</strong>: You burn for half as long.</td>
+<td><strong>Blast Proof</strong>: Explosions barely push you back.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Bedrock</strong>: +1.5 armor toughness.</td>
+<td><strong>Pain Eater</strong>: Taking a big hit gives Regeneration II for 3s.</td>
+<td><strong>Thorned Hide</strong>: Hostile mobs that hit you take 2 damage.</td>
+</tr>
+<tr>
+<td>Swiftness</td>
+<td>I (15)</td>
+<td><strong>Fleet</strong>: +5% move speed.</td>
+<td><strong>Sneak Step</strong>: Sneak 50% faster.</td>
+<td><strong>Swimmer</strong>: Move faster in water.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Gale</strong>: +10% move speed.</td>
+<td><strong>Spring Heels</strong>: Jump higher and fall 2 more blocks without damage.</td>
+<td><strong>Momentum</strong>: Sprinting for 3 seconds gives Speed II.</td>
+</tr>
+<tr>
+<td>Steadfast</td>
+<td>I (15)</td>
+<td><strong>Sure Footed</strong>: +10% knockback resistance.</td>
+<td><strong>Brace</strong>: Getting hit by a hostile mob gives 1 heart of Absorption (+½ heart per 10 Steadfast) for 4s (10s cooldown).</td>
+<td><strong>Grounded</strong>: Immune to Levitation.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Bulwark Stance</strong>: +20% knockback resistance.</td>
+<td><strong>Last Stand</strong>: While 3 or more hostile mobs are within 6 blocks, heal ½ heart (+½ per 25 Steadfast) every 2s.</td>
+<td><strong>Earthbind</strong>: While sneaking, hostile mobs within 4 blocks get Slowness I.</td>
+</tr>
+<tr>
+<td>Fortune</td>
+<td>I (15)</td>
+<td><strong>Lucky</strong>: +1 luck.</td>
+<td><strong>Scavenger</strong>: Kills have a 10% chance to give an arrow, string or bone.</td>
+<td><strong>Gilded</strong>: Kills drop a little extra experience.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Fortunate</strong>: +2 luck.</td>
+<td><strong>Jackpot</strong>: Kills have a 1% chance to give a diamond.</td>
+<td><strong>Gold Rush</strong>: Kills have an 8% chance to give a gold ingot.</td>
+</tr>
+<tr>
+<td>Mining</td>
+<td>I (15)</td>
+<td><strong>Quarryman</strong>: Break blocks 15% faster.</td>
+<td><strong>Aqua Miner</strong>: Mine much faster underwater.</td>
+<td><strong>Geologist</strong>: Double Mining training XP.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Excavator</strong>: Break blocks 30% faster.</td>
+<td><strong>Gem Sense</strong>: Mining turns up forge gems and modifiers half again as often.</td>
+<td><strong>Ore Luck</strong>: Ores have a 6% chance to drop an extra ore.</td>
+</tr>
+<tr>
+<td>Logging</td>
+<td>I (15)</td>
+<td><strong>Lumberjack</strong>: Break blocks 30% faster while holding an axe.</td>
+<td><strong>Charcoal Burner</strong>: Logs have a 6% chance to drop charcoal.</td>
+<td><strong>Arborist</strong>: Double Logging training XP.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Feller</strong>: Break blocks 60% faster while holding an axe.</td>
+<td><strong>Axe Mastery</strong>: +2 melee damage while holding an axe.</td>
+<td><strong>Reforest</strong>: Logs have a 5% chance to drop an oak sapling.</td>
+</tr>
+<tr>
+<td>Farming</td>
+<td>I (15)</td>
+<td><strong>Green Thumb</strong>: Double Farming training XP.</td>
+<td><strong>Composter</strong>: Crops have a 6% chance to drop bone meal.</td>
+<td><strong>Baker</strong>: Crops have a 3% chance to drop bread.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Harvester</strong>: +10% bonus harvest chance.</td>
+<td><strong>Shepherd</strong>: Farm animals within 8 blocks of you slowly regenerate.</td>
+<td><strong>Golden Fields</strong>: Crops have a 2% chance to drop a glistering melon slice.</td>
+</tr>
+<tr>
+<td>Fishing</td>
+<td>I (15)</td>
+<td><strong>Angler</strong>: Double Fishing training XP.</td>
+<td><strong>Gills</strong>: Breathe longer underwater.</td>
+<td><strong>Lucky Lure</strong>: +2 luck while holding a fishing rod (better catches).</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Aquatic</strong>: Swim much faster.</td>
+<td><strong>Sea Treasures</strong>: Catches have a 4% chance to bring up a nautilus shell.</td>
+<td><strong>Deep Sight</strong>: Night Vision while your head is underwater.</td>
+</tr>
+<tr>
+<td>Cooking</td>
+<td>I (15)</td>
+<td><strong>Gourmand</strong>: Double Cooking training XP.</td>
+<td><strong>Energizing</strong>: Eating cooked food gives Speed I for 10s.</td>
+<td><strong>Iron Gut</strong>: Eating cooked food cures Poison, Hunger and Nausea.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Banquet</strong>: +10% bonus dish chance.</td>
+<td><strong>Feast Fuel</strong>: Eating cooked food gives Haste I for 30s.</td>
+<td><strong>Comfort Food</strong>: Eating cooked food gives 2 hearts of Absorption for 30s and +2 saturation.</td>
+</tr>
+<tr>
+<td>Blacksmithing</td>
+<td>I (15)</td>
+<td><strong>Keen Eye</strong>: Ingredients drop 50% more often from gathering.</td>
+<td><strong>Salvager</strong>: Modifiers drop 50% more often from monsters.</td>
+<td><strong>Apprentice</strong>: Double Blacksmithing training XP.</td>
+</tr>
+<tr>
+<td></td>
+<td>II (35)</td>
+<td><strong>Spark Saver</strong>: Recipes need one ingot less (never below 1).</td>
+<td><strong>Gem Setter</strong>: Gem modifiers count one tier higher when forged in.</td>
+<td><strong>Keen Edge</strong>: Forged weapons get +1 to every affix roll.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="respec">Respec</h2>
+<p><strong>[↺ Respec]</strong> on the character sheet (or Warden Aldric's "Respec attributes") refunds <strong>every attribute point you spent</strong>. It costs <strong>25 gold coins per character level</strong>. Your trained levels and passive choices are kept. Perks you only had thanks to spent points go away until you reach those levels again.</p>
+<p>This only resets attribute points. Your perk tree is reset separately (see <a href="skill-trees.html">Skill trees</a>).</p>
+<div class="pn"><a class="prev" href="abilities.html"><small>← Previous</small>Abilities</a><a class="next" href="attributes.html"><small>Next →</small>Attributes</a></div>
+<footer>Exile RPG wiki · written for datapack v0.31.3 and resource pack v0.7.3. Numbers are the pack's defaults.</footer></main>
+<aside class="toc"><b>On this page</b><a class="h2" href="#how-stats-work">How stats work</a><a class="h2" href="#the-16-stats">The 16 stats</a><a class="h2" href="#training-speed">Training speed</a><a class="h2" href="#perks">Perks</a><a class="h2" href="#passives">Passives</a><a class="h2" href="#respec">Respec</a></aside></div>
+<script src="search-index.js"></script><script src="wiki.js"></script></body></html>

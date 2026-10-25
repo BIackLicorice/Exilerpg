@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gear · Exile RPG Wiki</title><meta name="description" content="How gear works in Exile RPG - equipment slots, item levels, who loot is rolled for, and how often monsters drop it.">
+<link rel="icon" href="img/item_gear_journal.png"><link rel="stylesheet" href="wiki.css"></head>
+<body>
+<header><button id="menu" class="iconbtn" aria-label="Pages">☰</button>
+<a class="brand" href="index.html"><img src="img/item_gear_journal.png" alt=""><span>Exile RPG Wiki</span><small>pack v0.31.3</small></a>
+<div class="search"><input id="q" type="search" placeholder="Search the wiki  ( / )" autocomplete="off" aria-label="Search"><div id="res" class="results"></div></div>
+<button id="theme" class="iconbtn" aria-label="Light or dark" title="Light / dark">☀ / ☾</button></header>
+<div class="wrap"><nav class="side"><h4>Getting started</h4>
+<a href="index.html">Home</a>
+<a href="first-steps.html">First steps</a>
+<a href="the-journal.html">The Exile&#x27;s Journal</a>
+<a href="leveling.html">Leveling</a>
+<a href="coins-and-bank.html">Coins and the bank</a>
+<a href="quests.html">Quests</a>
+<a href="parties.html">Parties</a>
+<a href="mounts.html">Mounts</a>
+<a href="titles.html">Titles</a>
+<a href="death-and-safety.html">Death and safety</a>
+<a href="faq.html">FAQ</a>
+<h4>Classes &amp; stats</h4>
+<a href="classes.html">Classes</a>
+<a href="mage.html">Mage</a>
+<a href="archer.html">Archer</a>
+<a href="rogue.html">Rogue</a>
+<a href="warrior.html">Warrior</a>
+<a href="herald.html">Herald</a>
+<a href="skill-trees.html">Skill trees</a>
+<a href="abilities.html">Abilities</a>
+<a href="stats.html">Stats</a>
+<a href="attributes.html">Attributes</a>
+<a href="prestige.html">Prestige</a>
+<h4>Gear &amp; forge</h4>
+<a href="gear.html" class=cur>Gear</a>
+<a href="rarity.html">Rarity</a>
+<a href="weapons.html">Weapons</a>
+<a href="armour.html">Armour</a>
+<a href="sets.html">Sets</a>
+<a href="legendary-weapons.html">Legendary Weapons</a>
+<a href="relics.html">Extraordinary &amp; God&#x27;s Tool Weapons</a>
+<a href="orbs.html">Orbs</a>
+<a href="gems.html">Gems</a>
+<a href="forge.html">The Forge</a>
+<a href="ingredients.html">Ingredients &amp; Modifiers</a>
+<a href="amulets.html">Amulets</a></nav>
+<main><div class="crumb">Gear &amp; forge</div><h1>Gear</h1>
+<p class="lead">How gear works in Exile RPG - equipment slots, item levels, who loot is rolled for, and how often monsters drop it.</p>
+<h2 id="gear-at-a-glance">Gear at a glance</h2>
+<p>Exile RPG gear is more than vanilla swords and armour. Every piece has a <strong>rarity</strong>, an <strong>item level</strong>, base numbers (damage, attack speed, armour) that grow with that level, and stat <strong>affixes</strong> that add bonus levels to your <a href="stats.html">stats</a>.</p>
+<p>You get gear in three main ways:</p>
+<ul>
+<li><strong>Monster drops</strong>, rolled for you when something dies.</li>
+<li><strong>Rewards</strong>: dungeon chests, bounties and <a href="quests.html">quests</a>.</li>
+<li><strong>The <a href="forge.html">forge</a></strong>: you make it yourself with Blacksmithing.</li>
+</ul>
+<p><img class="icon" src="img/item_gear_w_levy_blade_normal.png" alt="Levy Blade" title="Levy Blade"> <img class="icon" src="img/item_gear_scale_hauberk_magic.png" alt="Scale Hauberk" title="Scale Hauberk"> <img class="icon" src="img/item_gear_iron_helm_rare.png" alt="Iron Helm" title="Iron Helm"></p>
+<h2 id="equipment-slots">Equipment slots</h2>
+<p>A piece only counts in its own slot. A helmet held in your hand gives you nothing.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Slot</th>
+<th>What goes there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main hand</td>
+<td>Weapons: swords, axes, maces, daggers, bows, staves, Mage Blades, standards</td>
+</tr>
+<tr>
+<td>Off hand</td>
+<td>Shields and a few special off-hand items</td>
+</tr>
+<tr>
+<td>Head, chest, legs, feet</td>
+<td><a href="armour.html">Armour</a></td>
+</tr>
+<tr>
+<td>Amulet slots (3)</td>
+<td><a href="amulets.html">Amulets</a>: the three slots in the right-hand column of your main inventory</td>
+</tr>
+</tbody>
+</table></div>
+<p>Your gear is checked a few times a second. Your stats update whenever you change what you wear or hold.</p>
+<h2 id="reading-a-tooltip">Reading a tooltip</h2>
+<p>From top to bottom, a gear tooltip shows:</p>
+<ol>
+<li><strong><code>[Rarity] Name</code></strong>, coloured by <a href="rarity.html">rarity</a>.</li>
+<li>Base name (on Rares and up), type and slot, e.g. <em>Stiletto · Dagger · Main Hand</em>.</li>
+<li><strong><code>Level N · usable from character level N</code></strong>.</li>
+<li><strong>Made for</strong> (armour only): the class the piece was rolled for.</li>
+<li>A bow's <strong>Draw Power</strong> (+% arrow damage).</li>
+<li>The item's skill, if it has one: a signature ability, an active or passive skill, a set bonus or set ultimate.</li>
+<li>Its <strong>affixes</strong> in their sockets (◆ filled, ◇ open), how many times it was rerolled, its flavour text and lore, and the marks of any <a href="orbs.html">orbs</a> used on it.</li>
+</ol>
+<h2 id="item-level-and-the-level-lock">Item level and the level lock</h2>
+<p>Every piece has an item level. <strong>A piece works only once your character level is at least its item level.</strong> Below that level:</p>
+<ul>
+<li><strong>Weapons</strong> deal no damage. Bows' arrows do nothing. Nothing casts from the weapon: no class abilities, skill gems, signature skills or item actives. No mana or cooldown is spent.</li>
+<li><strong>Armour, shields and amulets</strong> give no armour and no stats. They also don't count toward set bonuses.</li>
+</ul>
+<p>The first time you equip a locked piece, a chat line tells you which level it needs. While you hold a locked weapon, your ability bar shows the warning. Gear never expires: once a piece works for you, it keeps working at every level after.</p>
+<p>Higher item levels mean bigger base numbers. A sword's damage, for example, comes from its item level plus its rarity, so a fresh drop at your level usually beats an old piece. See <a href="weapons.html">weapons</a> and <a href="armour.html">armour</a> for the numbers.</p>
+<h2 id="who-loot-is-for">Who loot is for</h2>
+<p>Gear is <strong>rolled for one player at the moment it drops</strong>, and then it flies to that player:</p>
+<ul>
+<li>The killer gets the first piece. Any further pieces go round the other players nearby in turn (within 24 blocks, or 48 for bosses).</li>
+<li>The piece's <strong>item level is the receiver's level, or up to 3 below it</strong>. A level 20 player gets level 17, 18, 19 or 20 drops.</li>
+<li>Armour is made for the receiver's class 70% of the time and for another class 30% of the time, so you will sometimes find a piece for a friend.</li>
+<li>The floating label over a dropped piece shows its rarity, its name, its level and who it was rolled for. Anyone can pick it up and trade it.</li>
+</ul>
+<p>When you're alone, loot sprays out in a ring around the body. In a group, each piece flies to the player it was made for. Each dropped item also shows a coloured <strong>beam</strong> for its rarity.</p>
+<h2 id="how-often-monsters-drop-gear">How often monsters drop gear</h2>
+<p>Monsters come in ranks: <strong>Normal</strong>, <strong>Magic</strong>, <strong>Rare</strong> and <strong>Champion</strong>. Mini-bosses and bosses rank above those.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Monster</th>
+<th>Gear drop</th>
+<th>Orb drop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normal</td>
+<td>1.5%</td>
+<td>1%</td>
+</tr>
+<tr>
+<td>Magic</td>
+<td>7.5%</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td>50%</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>Champion</td>
+<td>always</td>
+<td>always</td>
+</tr>
+<tr>
+<td>Mini-boss / boss</td>
+<td>always 1 piece, plus a 50% chance of one more for each extra player nearby</td>
+<td>always</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each gear drop then rolls its <strong>rarity</strong> from a table based on the monster's level. Tougher monsters roll as if they were higher level. That table, and the chance that a drop rolls nothing at all, are on the <a href="rarity.html">rarity</a> page.</p>
+<p>Some drops are not rolled gear but <strong>uniques or set pieces</strong>: a few older sets and named items such as Emberbrand, Ghostfang and Owleye Cowl. When a drop rolls Common, Uncommon or Rare, the chance of a named item instead is:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Monster</th>
+<th>Chance of a unique or set piece</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normal</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>Magic</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Rare</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>Champion and up</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-kind-of-piece-drops">What kind of piece drops</h3>
+<p>If you have a class, about 45% of rolled drops are weapons, 10% are shields and 45% are armour. Of the weapons, 70% are your own class's type and 30% can be any class's. If you have no class yet (classes open at level 5), every kind is equally likely. Weapon bases also have a <strong>level band</strong>: the stronger bases only start dropping once you reach their band (see <a href="weapons.html">weapons</a>).</p>
+<h3 id="very-rare-drops">Very rare drops</h3>
+<p>On top of the normal drop, Rare monsters and Champions have a tiny chance of a <a href="legendary-weapons.html">Legendary weapon</a>, and Champions an even smaller chance of an <a href="relics.html">Extraordinary or God's Tool weapon</a>. Monsters also drop <a href="ingredients.html">forge ingredients and modifiers</a>.</p>
+<h2 id="other-ways-to-get-gear">Other ways to get gear</h2>
+<ul>
+<li><strong>Dungeon reward chests</strong> roll the rarity table as if the run were 10 levels higher, and they never come up empty.</li>
+<li><strong>Bounty and quest gear</strong> rolls the same table at your level, read further down for the better rewards (like a Rare monster or a Champion), and is never empty.</li>
+<li><strong>The <a href="forge.html">forge</a></strong> makes exactly the piece you choose, at any level up to your Blacksmithing level.</li>
+</ul>
+<h2 id="selling">Selling</h2>
+<p>Brenna Ironhand and The Collector buy gear, ingredients, modifiers and orbs at one shared price table. Brenna's menu has <strong>[Sell what you hold]</strong> and <strong>[Sell all gear]</strong>. See <a href="coins-and-bank.html">coins and bank</a>.</p>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="rarity.html">Rarity</a> · <a href="weapons.html">Weapons</a> · <a href="armour.html">Armour</a> · <a href="sets.html">Sets</a> · <a href="amulets.html">Amulets</a></li>
+<li><a href="orbs.html">Orbs</a>, to change the affixes on a piece</li>
+<li><a href="forge.html">The forge</a>, to make your own</li>
+</ul>
+<div class="pn"><a class="prev" href="prestige.html"><small>← Previous</small>Prestige</a><a class="next" href="rarity.html"><small>Next →</small>Rarity</a></div>
+<footer>Exile RPG wiki · written for datapack v0.31.3 and resource pack v0.7.3. Numbers are the pack's defaults.</footer></main>
+<aside class="toc"><b>On this page</b><a class="h2" href="#gear-at-a-glance">Gear at a glance</a><a class="h2" href="#equipment-slots">Equipment slots</a><a class="h2" href="#reading-a-tooltip">Reading a tooltip</a><a class="h2" href="#item-level-and-the-level-lock">Item level and the level lock</a><a class="h2" href="#who-loot-is-for">Who loot is for</a><a class="h2" href="#how-often-monsters-drop-gear">How often monsters drop gear</a><a class="h3" href="#what-kind-of-piece-drops">What kind of piece drops</a><a class="h3" href="#very-rare-drops">Very rare drops</a><a class="h2" href="#other-ways-to-get-gear">Other ways to get gear</a><a class="h2" href="#selling">Selling</a><a class="h2" href="#see-also">See also</a></aside></div>
+<script src="search-index.js"></script><script src="wiki.js"></script></body></html>

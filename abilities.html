@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Abilities · Exile RPG Wiki</title><meta name="description" content="How class abilities work, including casting keys, the ability bar, mana, cooldowns, damage scaling, and moving abilities between keys.">
+<link rel="icon" href="img/item_gear_journal.png"><link rel="stylesheet" href="wiki.css"></head>
+<body>
+<header><button id="menu" class="iconbtn" aria-label="Pages">☰</button>
+<a class="brand" href="index.html"><img src="img/item_gear_journal.png" alt=""><span>Exile RPG Wiki</span><small>pack v0.31.3</small></a>
+<div class="search"><input id="q" type="search" placeholder="Search the wiki  ( / )" autocomplete="off" aria-label="Search"><div id="res" class="results"></div></div>
+<button id="theme" class="iconbtn" aria-label="Light or dark" title="Light / dark">☀ / ☾</button></header>
+<div class="wrap"><nav class="side"><h4>Getting started</h4>
+<a href="index.html">Home</a>
+<a href="first-steps.html">First steps</a>
+<a href="the-journal.html">The Exile&#x27;s Journal</a>
+<a href="leveling.html">Leveling</a>
+<a href="coins-and-bank.html">Coins and the bank</a>
+<a href="quests.html">Quests</a>
+<a href="parties.html">Parties</a>
+<a href="mounts.html">Mounts</a>
+<a href="titles.html">Titles</a>
+<a href="death-and-safety.html">Death and safety</a>
+<a href="faq.html">FAQ</a>
+<h4>Classes &amp; stats</h4>
+<a href="classes.html">Classes</a>
+<a href="mage.html">Mage</a>
+<a href="archer.html">Archer</a>
+<a href="rogue.html">Rogue</a>
+<a href="warrior.html">Warrior</a>
+<a href="herald.html">Herald</a>
+<a href="skill-trees.html">Skill trees</a>
+<a href="abilities.html" class=cur>Abilities</a>
+<a href="stats.html">Stats</a>
+<a href="attributes.html">Attributes</a>
+<a href="prestige.html">Prestige</a>
+<h4>Gear &amp; forge</h4>
+<a href="gear.html">Gear</a>
+<a href="rarity.html">Rarity</a>
+<a href="weapons.html">Weapons</a>
+<a href="armour.html">Armour</a>
+<a href="sets.html">Sets</a>
+<a href="legendary-weapons.html">Legendary Weapons</a>
+<a href="relics.html">Extraordinary &amp; God&#x27;s Tool Weapons</a>
+<a href="orbs.html">Orbs</a>
+<a href="gems.html">Gems</a>
+<a href="forge.html">The Forge</a>
+<a href="ingredients.html">Ingredients &amp; Modifiers</a>
+<a href="amulets.html">Amulets</a></nav>
+<main><div class="crumb">Classes &amp; stats</div><h1>Abilities</h1>
+<p class="lead">How class abilities work, including casting keys, the ability bar, mana, cooldowns, damage scaling, and moving abilities between keys.</p>
+<h2 id="casting">Casting</h2>
+<p>Once you have a <a href="classes.html">class</a>, you cast abilities <strong>while holding your class weapon</strong>. Each ability sits on a <strong>key</strong>:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Mage, Rogue, Warrior, Herald</th>
+<th>Archer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Right-click</td>
+<td>Sneak + start drawing your bow</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Sneak + Right-click</td>
+<td>F (swap hands)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>F (swap hands)</td>
+<td>Sneak + F</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Sneak + F: your ultimate</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Ultimates</strong> unlock with your <strong>subclass</strong> at character level 20. The Herald is the exception: it has an ultimate from the start. An Archer's ultimate replaces Piercing Shot on Sneak + F.</li>
+<li><strong>Warriors cannot block</strong> with a shield. Their right-click always casts.</li>
+<li>Each class's abilities are listed on its page: <a href="mage.html">Mage</a>, <a href="archer.html">Archer</a>, <a href="rogue.html">Rogue</a>, <a href="warrior.html">Warrior</a>, <a href="herald.html">Herald</a>.</li>
+</ul>
+<h2 id="the-ability-bar">The ability bar</h2>
+<p>While you hold your class weapon, the bar above your hotbar shows your <strong>mana</strong> and every key:</p>
+<ul>
+<li><strong>green</strong> name: ready.</li>
+<li><strong>blue</strong> name: not enough mana.</li>
+<li>grey name with <strong>red seconds</strong>: on cooldown.</li>
+</ul>
+<p>Out of combat, training XP pop-ups take over the bar for a moment. Then your abilities come back.</p>
+<h2 id="reading-an-ability">Reading an ability</h2>
+<p>Hover an ability's name on the class page. The hover shows its mana cost, its cooldown (after your cooldown reductions), its damage formula and the damage it deals <strong>with your stats right now</strong>.</p>
+<p><strong>Damage = base + a share of your stat levels.</strong> "8 + 50% Arcana + 30% Precision" with Arcana 30 and Precision 20 deals 8 + 15 + 6 = <strong>29</strong>. Your total stat level counts, including bonus levels from gear, the tree, amulets and buffs. See <a href="stats.html">Stats</a>.</p>
+<p>Ability damage:
+- only hits <strong>hostile mobs</strong>. Animals, villagers and other players are never hurt.
+- is credited to you, so kills count as yours.
+- is not blocked by a monster's hit cooldown, so several abilities can land on the same monster at once.</p>
+<h2 id="mana">Mana</h2>
+<p>Everyone uses one mana pool:</p>
+<ul>
+<li><strong>Max mana = 100 + 4 per Arcana level.</strong> More comes from Deep Reserves (+30), Mana Font (+40), Steady Breath (+20) and some gear and attributes.</li>
+<li><strong>It refills 5% of your max every second</strong> (at least 1). Mana Flow and Second Breath each add +25%, Quick Recovery adds +1 a second and Mana Tide +2 a second.</li>
+<li><strong>Spending mana trains Arcana</strong>: 1 training XP per 5 mana.</li>
+</ul>
+<h2 id="cooldowns">Cooldowns</h2>
+<ul>
+<li>A cooldown belongs to the <strong>ability</strong>, not the key, so moving an ability never resets it.</li>
+<li><strong>Shorter cooldowns:</strong> Archmage (Arcana level 50 perk) cuts ability cooldowns by 15% and Quick Wit (Mage tree) by 10%. Some notables shorten one ability, such as Rapid Bolt, Judgment and Spring Heels.</li>
+</ul>
+<h2 id="moving-your-abilities">Moving your abilities</h2>
+<p>You can put any ability you have earned on any key. Open the class page (from your character sheet) and find <strong>Your keys</strong>:</p>
+<ul>
+<li><strong>[change]</strong> next to a key lists your whole <strong>pool</strong>: your class's three abilities, your subclass's upgrade, your ultimate and the ultimate of a set you wear (see <a href="sets.html">Sets</a>). Abilities you haven't earned yet are greyed out and say why.</li>
+<li>Picking an ability that is already on another key <strong>swaps the two</strong>. <strong>– Nothing</strong> empties a key.</li>
+<li><strong>[⟲ Default keys]</strong> puts everything back.</li>
+<li>Only <strong>one ultimate</strong> (yours or a set's) can be on your keys at a time.</li>
+<li>When your subclass upgrades an ability, the upgrade takes the old ability's key by default. The old one <strong>stays in your pool</strong> with its own cooldown, so you can run both.</li>
+<li>You can't change keys for <strong>10 seconds after taking damage</strong>. The page tells you how long is left.</li>
+<li>Changing class or subclass puts your keys back to default.</li>
+</ul>
+<h2 id="weapons-with-their-own-skill">Weapons with their own skill</h2>
+<p>A weapon with a <strong>socketed skill gem</strong> (see <a href="gems.html">Gems</a>), or one of the class <strong>signature weapons</strong>, casts its own skill on <strong>key 1</strong> while you hold it. This is Right-click, or Sneak + draw for an Archer. Whatever you put on key 1 waits until you put that weapon away. Signature weapons have their own cooldown.</p>
+<h2 id="stats-perks-and-nodes-that-help-abilities">Stats, perks and nodes that help abilities</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arcana perks</td>
+<td>Mana Flow (+25% mana regen, level 10), Spell Echo (10% chance an ability costs no mana, level 20), Arcane Mastery (+3 damage on every ability hit, level 40), Archmage (cooldowns 15% shorter, level 50).</td>
+</tr>
+<tr>
+<td>Arcana passives</td>
+<td>Tier I (pick one): Deep Reserves, Quick Recovery, Spell Siphon (kills restore 10 mana). Tier II (pick one): Battle Mage (melee hits restore 3 mana), Arcane Surge (+5 ability damage above 80% mana), Ley Ward.</td>
+</tr>
+<tr>
+<td>Tree</td>
+<td>Steady Breath, Second Breath, Spellweaver (+2 damage on every ability hit), Quick Wit, Mana Font, Mana Tide, Overcharge.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The full perk and passive lists are on <a href="stats.html">Stats</a>.</p>
+<div class="pn"><a class="prev" href="skill-trees.html"><small>← Previous</small>Skill trees</a><a class="next" href="stats.html"><small>Next →</small>Stats</a></div>
+<footer>Exile RPG wiki · written for datapack v0.31.3 and resource pack v0.7.3. Numbers are the pack's defaults.</footer></main>
+<aside class="toc"><b>On this page</b><a class="h2" href="#casting">Casting</a><a class="h2" href="#the-ability-bar">The ability bar</a><a class="h2" href="#reading-an-ability">Reading an ability</a><a class="h2" href="#mana">Mana</a><a class="h2" href="#cooldowns">Cooldowns</a><a class="h2" href="#moving-your-abilities">Moving your abilities</a><a class="h2" href="#weapons-with-their-own-skill">Weapons with their own skill</a><a class="h2" href="#stats-perks-and-nodes-that-help-abilities">Stats, perks and nodes that help abilities</a></aside></div>
+<script src="search-index.js"></script><script src="wiki.js"></script></body></html>

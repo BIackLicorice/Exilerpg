@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leveling · Exile RPG Wiki</title><meta name="description" content="How your character level works - where character XP comes from, how much each level needs, and what levels give you.">
+<link rel="icon" href="img/item_gear_journal.png"><link rel="stylesheet" href="wiki.css"></head>
+<body>
+<header><button id="menu" class="iconbtn" aria-label="Pages">☰</button>
+<a class="brand" href="index.html"><img src="img/item_gear_journal.png" alt=""><span>Exile RPG Wiki</span><small>pack v0.31.3</small></a>
+<div class="search"><input id="q" type="search" placeholder="Search the wiki  ( / )" autocomplete="off" aria-label="Search"><div id="res" class="results"></div></div>
+<button id="theme" class="iconbtn" aria-label="Light or dark" title="Light / dark">☀ / ☾</button></header>
+<div class="wrap"><nav class="side"><h4>Getting started</h4>
+<a href="index.html">Home</a>
+<a href="first-steps.html">First steps</a>
+<a href="the-journal.html">The Exile&#x27;s Journal</a>
+<a href="leveling.html" class=cur>Leveling</a>
+<a href="coins-and-bank.html">Coins and the bank</a>
+<a href="quests.html">Quests</a>
+<a href="parties.html">Parties</a>
+<a href="mounts.html">Mounts</a>
+<a href="titles.html">Titles</a>
+<a href="death-and-safety.html">Death and safety</a>
+<a href="faq.html">FAQ</a>
+<h4>Classes &amp; stats</h4>
+<a href="classes.html">Classes</a>
+<a href="mage.html">Mage</a>
+<a href="archer.html">Archer</a>
+<a href="rogue.html">Rogue</a>
+<a href="warrior.html">Warrior</a>
+<a href="herald.html">Herald</a>
+<a href="skill-trees.html">Skill trees</a>
+<a href="abilities.html">Abilities</a>
+<a href="stats.html">Stats</a>
+<a href="attributes.html">Attributes</a>
+<a href="prestige.html">Prestige</a>
+<h4>Gear &amp; forge</h4>
+<a href="gear.html">Gear</a>
+<a href="rarity.html">Rarity</a>
+<a href="weapons.html">Weapons</a>
+<a href="armour.html">Armour</a>
+<a href="sets.html">Sets</a>
+<a href="legendary-weapons.html">Legendary Weapons</a>
+<a href="relics.html">Extraordinary &amp; God&#x27;s Tool Weapons</a>
+<a href="orbs.html">Orbs</a>
+<a href="gems.html">Gems</a>
+<a href="forge.html">The Forge</a>
+<a href="ingredients.html">Ingredients &amp; Modifiers</a>
+<a href="amulets.html">Amulets</a></nav>
+<main><div class="crumb">Getting started</div><h1>Leveling</h1>
+<p class="lead">How your character level works - where character XP comes from, how much each level needs, and what levels give you.</p>
+<p>Exile RPG has two kinds of level:</p>
+<ul>
+<li><strong>Stat levels</strong> - each of your stats (Might, Vitality, Mining...) levels on its own by being used. Stats cap at 50. That's all on the <a href="stats.html">Stats</a> page.</li>
+<li><strong>Your character level</strong> - one number for your whole character, shown at the top of the <a href="the-journal.html">character sheet</a>. This page is about that one.</li>
+</ul>
+<h2 id="where-character-xp-comes-from">Where character XP comes from</h2>
+<p>You never earn character XP directly from killing a monster. It comes from your stats and from the work you do:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A stat levels up</strong></td>
+<td>Character XP equal to the stat's new level. Mining going from 14 to 15 gives 15 character XP</td>
+</tr>
+<tr>
+<td><strong>Training XP</strong></td>
+<td>A big share (half, counted before the training slow-down) of the training XP your non-gathering stats earn also counts as character XP. Gathering stats (Mining, Logging, Farming, Fishing, Cooking) and Blacksmithing give none of this share</td>
+</tr>
+<tr>
+<td><strong>A stat at its cap (50)</strong></td>
+<td>It keeps paying a smaller share (10%) of what it would have earned, so maxed stats still help you level</td>
+</tr>
+<tr>
+<td><strong>Quests</strong></td>
+<td>Many quests pay character XP directly, and story and world quests pay a lot. See <a href="quests.html">Quests</a></td>
+</tr>
+<tr>
+<td><strong>Bounties</strong></td>
+<td>The Quest Board's daily and weekly bounties pay a bonus of character XP on top</td>
+</tr>
+<tr>
+<td><strong>Dungeons and world events</strong></td>
+<td>Finishing them pays character XP</td>
+</tr>
+<tr>
+<td><strong>Party kills</strong></td>
+<td>Kill XP your party shares with you trains your stats, and that counts too. See <a href="parties.html">Parties</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Your character level is checked every few seconds, so XP from any source levels you up. If one big reward covers several levels, you climb them all at once.</p>
+<p><strong>Prestige</strong> makes a stat train faster, but it doesn't increase the character XP share. See <a href="prestige.html">Prestige</a>.</p>
+<h2 id="how-much-xp-each-level-needs">How much XP each level needs</h2>
+<p>The XP for your next level is <strong>125 + 25 × your current level</strong>. It grows steadily:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>From level</th>
+<th>XP to the next level</th>
+<th>Total XP to reach that level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>150</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>250</td>
+<td>750</td>
+</tr>
+<tr>
+<td>10</td>
+<td>375</td>
+<td>2,250</td>
+</tr>
+<tr>
+<td>15</td>
+<td>500</td>
+<td>4,375</td>
+</tr>
+<tr>
+<td>20</td>
+<td>625</td>
+<td>7,125</td>
+</tr>
+<tr>
+<td>30</td>
+<td>875</td>
+<td>14,500</td>
+</tr>
+<tr>
+<td>40</td>
+<td>1,125</td>
+<td>24,375</td>
+</tr>
+<tr>
+<td>50</td>
+<td>1,375</td>
+<td>36,750</td>
+</tr>
+</tbody>
+</table></div>
+<p>There's no hard cap on character level.</p>
+<h2 id="what-every-level-gives">What every level gives</h2>
+<p>Each character level gives you:</p>
+<ul>
+<li><strong>+1 attribute point</strong> - spend it on the sheet with <strong>[+1]</strong> / <strong>[+5]</strong>. Each point adds a level to a stat, up to its cap.</li>
+<li><strong>+1 perk point</strong> - spend it on your class's <strong>Perk Tree</strong> (<a href="skill-trees.html">Skill trees</a>). Points earned before you have a class wait for you.</li>
+</ul>
+<p>A title on screen, a sound and a chat line with <strong>[Stats]</strong> and <strong>[Passive Tree]</strong> buttons mark the moment.</p>
+<h2 id="milestones">Milestones</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Level</th>
+<th>What opens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td><strong>Choose your class</strong> (the first one is free) - <a href="classes.html">Classes</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>The quest that leads to your first <strong>mount</strong> - <a href="mounts.html">Mounts</a></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Your class's <strong>subclasses</strong> - <a href="classes.html">Classes</a>; the title <em>The Seasoned</em></td>
+</tr>
+<tr>
+<td>40</td>
+<td>The title <em>The Veteran</em> - <a href="titles.html">Titles</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Many quests on the Quest Board also need a minimum character level before they show up.</p>
+<h2 id="your-level-and-the-world">Your level and the world</h2>
+<ul>
+<li><strong>Monsters scale to you.</strong> A monster's level is set when it appears, from the players nearby (a little below to a few above their level). Some places have a minimum monster level. A level shown in <strong>red</strong> over a monster's head means it's 5 or more levels above you.</li>
+<li><strong>Gear has a level.</strong> A piece only works for you while its level is within range of yours. See <a href="gear.html">Gear</a>.</li>
+<li><strong>Bounty coins grow with you.</strong> Warden Aldric's bounties pay 2% more coins for every character level.</li>
+<li><strong>Respecs cost more as you grow.</strong> An attribute respec or a perk tree reset costs 25 Gold Coins per character level.</li>
+</ul>
+<div class="pn"><a class="prev" href="the-journal.html"><small>← Previous</small>The Exile&#x27;s Journal</a><a class="next" href="coins-and-bank.html"><small>Next →</small>Coins and the bank</a></div>
+<footer>Exile RPG wiki · written for datapack v0.31.3 and resource pack v0.7.3. Numbers are the pack's defaults.</footer></main>
+<aside class="toc"><b>On this page</b><a class="h2" href="#where-character-xp-comes-from">Where character XP comes from</a><a class="h2" href="#how-much-xp-each-level-needs">How much XP each level needs</a><a class="h2" href="#what-every-level-gives">What every level gives</a><a class="h2" href="#milestones">Milestones</a><a class="h2" href="#your-level-and-the-world">Your level and the world</a></aside></div>
+<script src="search-index.js"></script><script src="wiki.js"></script></body></html>

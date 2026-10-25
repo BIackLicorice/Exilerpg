@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Forge · Exile RPG Wiki</title><meta name="description" content="Blacksmithing - opening the forge at an anvil, the patterns, mastery and metals, picking a level, affix slots, gem rolls, modifiers and the Blacksmithing perks.">
+<link rel="icon" href="img/item_gear_journal.png"><link rel="stylesheet" href="wiki.css"></head>
+<body>
+<header><button id="menu" class="iconbtn" aria-label="Pages">☰</button>
+<a class="brand" href="index.html"><img src="img/item_gear_journal.png" alt=""><span>Exile RPG Wiki</span><small>pack v0.31.3</small></a>
+<div class="search"><input id="q" type="search" placeholder="Search the wiki  ( / )" autocomplete="off" aria-label="Search"><div id="res" class="results"></div></div>
+<button id="theme" class="iconbtn" aria-label="Light or dark" title="Light / dark">☀ / ☾</button></header>
+<div class="wrap"><nav class="side"><h4>Getting started</h4>
+<a href="index.html">Home</a>
+<a href="first-steps.html">First steps</a>
+<a href="the-journal.html">The Exile&#x27;s Journal</a>
+<a href="leveling.html">Leveling</a>
+<a href="coins-and-bank.html">Coins and the bank</a>
+<a href="quests.html">Quests</a>
+<a href="parties.html">Parties</a>
+<a href="mounts.html">Mounts</a>
+<a href="titles.html">Titles</a>
+<a href="death-and-safety.html">Death and safety</a>
+<a href="faq.html">FAQ</a>
+<h4>Classes &amp; stats</h4>
+<a href="classes.html">Classes</a>
+<a href="mage.html">Mage</a>
+<a href="archer.html">Archer</a>
+<a href="rogue.html">Rogue</a>
+<a href="warrior.html">Warrior</a>
+<a href="herald.html">Herald</a>
+<a href="skill-trees.html">Skill trees</a>
+<a href="abilities.html">Abilities</a>
+<a href="stats.html">Stats</a>
+<a href="attributes.html">Attributes</a>
+<a href="prestige.html">Prestige</a>
+<h4>Gear &amp; forge</h4>
+<a href="gear.html">Gear</a>
+<a href="rarity.html">Rarity</a>
+<a href="weapons.html">Weapons</a>
+<a href="armour.html">Armour</a>
+<a href="sets.html">Sets</a>
+<a href="legendary-weapons.html">Legendary Weapons</a>
+<a href="relics.html">Extraordinary &amp; God&#x27;s Tool Weapons</a>
+<a href="orbs.html">Orbs</a>
+<a href="gems.html">Gems</a>
+<a href="forge.html" class=cur>The Forge</a>
+<a href="ingredients.html">Ingredients &amp; Modifiers</a>
+<a href="amulets.html">Amulets</a></nav>
+<main><div class="crumb">Gear &amp; forge</div><h1>The Forge</h1>
+<p class="lead">Blacksmithing - opening the forge at an anvil, the patterns, mastery and metals, picking a level, affix slots, gem rolls, modifiers and the Blacksmithing perks.</p>
+<h2 id="blacksmithing-in-short">Blacksmithing in short</h2>
+<p>At the forge you <strong>make your own gear</strong>. You pick what to make and its level, put in metal, wood and hides, then add gems and modifiers to decide exactly which affixes it gets. There's nothing random on a forged piece apart from the gem rolls: <strong>it has only what you put in</strong>.</p>
+<p><strong>Blacksmithing</strong> (⚒) is a stat on your character sheet next to the gathering stats. Its level is your <strong>mastery</strong>, and it decides:</p>
+<ul>
+<li>the <strong>rarity</strong> your pieces come out at,</li>
+<li>the <strong>best metal</strong> you're allowed to use,</li>
+<li>the <strong>highest level</strong> you can forge a piece at (your Blacksmithing level).</li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Blacksmithing level</th>
+<th>Mastery</th>
+<th>Best metal</th>
+<th>Pieces come out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-10</td>
+<td>Common</td>
+<td>Copper</td>
+<td>Common</td>
+</tr>
+<tr>
+<td>11-21</td>
+<td>Uncommon</td>
+<td>Iron</td>
+<td>Uncommon</td>
+</tr>
+<tr>
+<td>22-32</td>
+<td>Rare</td>
+<td>Gold</td>
+<td>Rare</td>
+</tr>
+<tr>
+<td>33-43</td>
+<td>Mythic</td>
+<td>Diamond</td>
+<td>Mythic</td>
+</tr>
+<tr>
+<td>44-50</td>
+<td>Legendary</td>
+<td>Netherite</td>
+<td>Legendary</td>
+</tr>
+</tbody>
+</table></div>
+<p>So a crafted piece can be very strong for its level, but it stays at the level you forged it. A well-made level 5 sword can still be outclassed by a plain drop a few levels later, unless your modifiers carry it further.</p>
+<h2 id="opening-the-forge">Opening the forge</h2>
+<p>You need an <strong>anvil within 3 blocks</strong> (any anvil, chipped or damaged too). Then open the forge in any of these ways:</p>
+<ul>
+<li>Right-click the <strong>Exile's Journal</strong> near an anvil. To open the journal itself there, sneak.</li>
+<li><strong>[Open the forge]</strong> on the Blacksmithing page of your character sheet.</li>
+<li><strong>[⚒ Open the forge]</strong> in Brenna Ironhand's menu. Brenna counts as an anvil anywhere within 8 blocks of her.</li>
+</ul>
+<p>The forge is a chat menu. If you walk away from the anvil it closes ("You stepped away from the anvil"). <strong>Whatever you put in stays in the forge</strong> until you forge it or take it back, even if you close the menu.</p>
+<h2 id="the-forge-screen-top-to-bottom">The forge screen, top to bottom</h2>
+<ul>
+<li><strong>The header:</strong> your Blacksmithing level and mastery (hover to see your pieces' rarity and best metal), and <strong>[✖ Close]</strong>.</li>
+<li><strong>Workbench:</strong> <strong>[Combine 9 → next tier]</strong>. Hold 9 of a ✦ ingredient or gem to make one ✦✦, or 9 ✦✦ to make one ✦✦✦. With the Reclaimer perk you also get <strong>[Reclaim held piece]</strong>.</li>
+<li><strong>① Make:</strong> the patterns, grouped as <strong>Armour</strong> [Helmet] [Chest] [Legs] [Boots], <strong>Weapon</strong> [Sword] [Axe] [Mace] [Dagger] [Bow] [Staff] [Mage Blade] [Standard] and <strong>Shield</strong> [Shield]. Hover a pattern to see what it needs. The one you picked is yellow.</li>
+<li><strong>② For</strong> <em>(armour only)</em>: the class the armour is made for. [My class] is the default. Weapons and shields are always made for their own type's class, so this line doesn't appear for them.</li>
+<li><strong>Level</strong> (② for weapons and shields, ③ for armour): [-10] [-1] <em>level</em> [+1] [+10] [Max]. This is the piece's item level, which decides its damage or armour and the character level that can use it. It goes from 1 up to your Blacksmithing level. It follows your Blacksmithing level as you train until you touch the row, and [Max] hands it back to following.</li>
+<li><strong>The piece:</strong> "▸ Sword · Iron Ingot · 3 in" (the pattern, the metal and how many ingredients are in). Under it is the requirements line, e.g. <em>Ingots 1/2 · Wood 0/1 · Modifiers 1/6 · Affix slots 1/3</em>, then the modifiers you've put in, then <strong>Gem affixes roll best of N</strong>. Hover these for details.</li>
+<li><strong>Put in:</strong> <strong>[+ Add what I hold]</strong> moves the ingredient or modifier in your main hand into the piece. <strong>[↩ Take it all back]</strong> returns everything.</li>
+<li><strong>[⚒ Forge it]</strong>, alone on the last line, once everything is in.</li>
+</ul>
+<h2 id="patterns">Patterns</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Needs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Helmet</td>
+<td>5 ingots + 2 hides</td>
+</tr>
+<tr>
+<td>Chestplate</td>
+<td>8 ingots + 4 hides</td>
+</tr>
+<tr>
+<td>Leggings</td>
+<td>7 ingots + 3 hides</td>
+</tr>
+<tr>
+<td>Boots</td>
+<td>4 ingots + 2 hides</td>
+</tr>
+<tr>
+<td>Sword</td>
+<td>2 ingots + 1 wood</td>
+</tr>
+<tr>
+<td>Axe</td>
+<td>3 ingots + 2 wood</td>
+</tr>
+<tr>
+<td>Mace</td>
+<td>3 ingots + 2 wood</td>
+</tr>
+<tr>
+<td>Dagger</td>
+<td>1 ingot + 1 hide</td>
+</tr>
+<tr>
+<td>Bow</td>
+<td>3 wood + 2 hides</td>
+</tr>
+<tr>
+<td>Staff</td>
+<td>1 ingot + 2 wood</td>
+</tr>
+<tr>
+<td>Mage Blade</td>
+<td>1 ingot + 1 wood</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td>3 wood + 2 hides</td>
+</tr>
+<tr>
+<td>Shield</td>
+<td>1 ingot + 6 wood</td>
+</tr>
+</tbody>
+</table></div>
+<p>You can only change the pattern while the forge is empty ("Take it all back before changing the pattern"). The piece's base is one of the made-for class's bases of that type, in that class's look.</p>
+<h2 id="the-rules-for-putting-things-in">The rules for putting things in</h2>
+<ul>
+<li><strong>One metal per piece.</strong> Every ingot must be the same metal.</li>
+<li><strong>The metal must be within your mastery.</strong> A Common smith can only use copper. An Ancient Sigil put in first lets any metal in.</li>
+<li>A family the pattern doesn't need, or already has enough of, is refused ("The ingots are all in").</li>
+<li><strong>Modifier slots:</strong> up to <strong>6</strong> modifiers go into one piece (7 with Legend Smith).</li>
+<li>Each modifier must fit the piece: <em>Weapons</em> ones go into anything held (melee weapons, bows, standards), <em>Armour</em> ones into armour and shields, <em>Bows</em> ones into bows, and so on. A Hide Scrap counts as one hide of any kind.</li>
+<li>Some modifiers are <strong>one per piece</strong>: Bone Dust, Echo Shard, Reverb Echo, Star Shard, Skill Socket Stone, Void Crown Fragment, Heart of the Fallen, Ancient Sigil, Amethyst Cluster and Shulker Plate.</li>
+<li><strong>Weapons never carry Vitality</strong>, so a Garnet can't go into a weapon.</li>
+</ul>
+<p>Every ingredient and modifier is listed with what it does on the <a href="ingredients.html">ingredients</a> page.</p>
+<h2 id="affix-slots">Affix slots</h2>
+<p>The metal decides how many <strong>stat lines</strong> a piece can carry:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Metal</th>
+<th>Affix slots</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copper</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Iron</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Gold</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Diamond</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Netherite</td>
+<td>6</td>
+</tr>
+</tbody>
+</table></div>
+<p>An <strong>Amethyst Cluster</strong> and a <strong>Heart of the Fallen</strong> each add one more. One slot holds one stat line. That's either a gem's stat (more gems of the same stat share the slot) or a fixed-stat modifier such as Sinew or Hunters Eye. The wood and hide bonus is free and needs no slot. Until you add an ingot, your mastery's metal counts. The forge refuses a new stat when every slot is used, and it refuses an ingot whose metal has fewer slots than the piece already uses.</p>
+<h2 id="how-the-affixes-are-made">How the affixes are made</h2>
+<ul>
+<li><strong>Gems</strong> become one affix per stat. Gems of the same stat add up, so three ✦✦ Rubies make one Might affix of +9 to +15. See <a href="gems.html">gems</a> for every gem's range.</li>
+<li><strong>The metal rolls the gems.</strong> Each gem affix is rolled several times and the best roll stays. The number of tries is the metal's rank (copper 1, iron 2, gold 3, diamond 4, netherite 5), plus 1 for each tier your ingredients average above ✦, plus 3 for an Echo Shard. The menu shows the result as <em>Gem affixes roll best of N</em>.</li>
+<li><strong>Wood and hide bonus:</strong> the wood you used most and the hide you used most each add their stat, in a range set by their average tier, rolled the same best-of way. Wood and hides list their ranges on their tooltips.</li>
+<li><strong>Flat bonuses</strong> come after the roll: Coarse Grit +1 and Heart of the Fallen +2 to every gem affix, Shulker Plate -3, the Keen Edge passive +1 on weapons, and the Masters Mark perk +1. An affix never goes below 1.</li>
+<li><strong>Bone Dust</strong> lifts your lowest gem affix to the top of its range. <strong>Reverb Echo</strong> makes your highest gem affix 50% bigger.</li>
+<li><strong>Sockets</strong> come from the rarity, like a drop, plus a Void Pearl (+1) or Shulker Plate (+2). A <strong>skill socket</strong> only comes from a Skill Socket Stone or a Void Crown Fragment.</li>
+<li><strong>Rarity</strong> is your mastery's. A <strong>Star Shard</strong> makes it one step higher (Legendary stays Legendary).</li>
+<li>Gem affixes are fixed numbers. They don't scale with the level you pick. The level only sets the piece's base damage or armour.</li>
+</ul>
+<h3 id="burning">Burning</h3>
+<p>When you press [⚒ Forge it], <strong>each modifier has a 15% chance to burn away</strong> ("Ruby burned away"). The <strong>Careful Hands</strong> perk (Blacksmithing 10) stops that completely.</p>
+<h3 id="the-forging-show">The forging show</h3>
+<p>The piece doesn't just appear. It floats over the anvil while each modifier sinks in, one at a time, and each gem line spins through its range before landing on its roll, e.g. <em>"The Might gems rolled +9 Might"</em>. The numbers it shows are the real ones. When it says <em>"It is done - the piece is on the anvil"</em>, the piece drops for you to pick up.</p>
+<p>A forged piece's tooltip says <strong>⚒ Crafted · Iron ✦✦ · gem rolls best of 3</strong> (with Masters Mark: <em>Crafted by</em> and your name). The stars are your ingredients' average tier.</p>
+<h2 id="training-blacksmithing">Training Blacksmithing</h2>
+<p>You train Blacksmithing by forging. Each piece gives Blacksmithing XP for every ingredient that went in, more for better metals, and more for every modifier that went in. Some quests pay Blacksmithing XP too, and the Quest Board has forge quests that ask you to forge a certain kind of piece. Gathering is how you find the materials (see <a href="ingredients.html">ingredients</a>).</p>
+<h3 id="perks">Perks</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Perk</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>Careful Hands</td>
+<td>Modifiers never burn away in the forge.</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Reclaimer</td>
+<td>[Reclaim held piece]: turn a piece you forged back into 1-3 of its ingots.</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Masters Mark</td>
+<td>Your name on every piece you forge, and +1 to every gem affix.</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Legend Smith</td>
+<td>A 7th modifier slot.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="passives-choose-one-per-tier">Passives (choose one per tier)</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Choices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I (level 15)</td>
+<td><strong>Keen Eye</strong>: ingredients drop 50% more often from gathering. · <strong>Salvager</strong>: modifiers drop 50% more often from monsters. · <strong>Apprentice</strong>: double Blacksmithing training XP.</td>
+</tr>
+<tr>
+<td>II (level 35)</td>
+<td><strong>Spark Saver</strong>: patterns need one ingot less (never below 1). · <strong>Gem Setter</strong>: gems count one tier higher when forged in. · <strong>Keen Edge</strong>: forged weapons get +1 to every affix roll.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The <strong>Trades</strong> nodes of your class <a href="skill-trees.html">skill tree</a> help too: <em>Forge Hand</em> gives +1 gem roll on every piece, and <em>Quick Kiln</em> +25% Blacksmithing XP.</p>
+<h2 id="brenna-ironhand">Brenna Ironhand</h2>
+<p>Brenna is the smith's NPC. She <strong>sells materials</strong>: six random rows a day of ingredients, modifiers and sometimes a ✦✦ gem, up to 5 of each. She counts as an anvil, has the [Combine 9] button too, and <strong>buys</strong> gear, ingredients, modifiers, gems and orbs. She doesn't upgrade or repair gear. That's what the orbs and the forge are for.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="ingredients.html">Ingredients &amp; modifiers</a> · <a href="gems.html">Gems</a> · <a href="rarity.html">Rarity</a> · <a href="stats.html">Stats</a> · <a href="gear.html">Gear</a></p>
+<div class="pn"><a class="prev" href="gems.html"><small>← Previous</small>Gems</a><a class="next" href="ingredients.html"><small>Next →</small>Ingredients &amp; Modifiers</a></div>
+<footer>Exile RPG wiki · written for datapack v0.31.3 and resource pack v0.7.3. Numbers are the pack's defaults.</footer></main>
+<aside class="toc"><b>On this page</b><a class="h2" href="#blacksmithing-in-short">Blacksmithing in short</a><a class="h2" href="#opening-the-forge">Opening the forge</a><a class="h2" href="#the-forge-screen-top-to-bottom">The forge screen, top to bottom</a><a class="h2" href="#patterns">Patterns</a><a class="h2" href="#the-rules-for-putting-things-in">The rules for putting things in</a><a class="h2" href="#affix-slots">Affix slots</a><a class="h2" href="#how-the-affixes-are-made">How the affixes are made</a><a class="h3" href="#burning">Burning</a><a class="h3" href="#the-forging-show">The forging show</a><a class="h2" href="#training-blacksmithing">Training Blacksmithing</a><a class="h3" href="#perks">Perks</a><a class="h3" href="#passives-choose-one-per-tier">Passives (choose one per tier)</a><a class="h2" href="#brenna-ironhand">Brenna Ironhand</a><a class="h2" href="#see-also">See also</a></aside></div>
+<script src="search-index.js"></script><script src="wiki.js"></script></body></html>

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skill trees · Exile RPG Wiki</title><meta name="description" content="How the class perk trees work, including perk points, the trunk, the three branches, notables and keystones, the shared Trades nodes, refunds and resets.">
+<link rel="icon" href="img/item_gear_journal.png"><link rel="stylesheet" href="wiki.css"></head>
+<body>
+<header><button id="menu" class="iconbtn" aria-label="Pages">☰</button>
+<a class="brand" href="index.html"><img src="img/item_gear_journal.png" alt=""><span>Exile RPG Wiki</span><small>pack v0.31.3</small></a>
+<div class="search"><input id="q" type="search" placeholder="Search the wiki  ( / )" autocomplete="off" aria-label="Search"><div id="res" class="results"></div></div>
+<button id="theme" class="iconbtn" aria-label="Light or dark" title="Light / dark">☀ / ☾</button></header>
+<div class="wrap"><nav class="side"><h4>Getting started</h4>
+<a href="index.html">Home</a>
+<a href="first-steps.html">First steps</a>
+<a href="the-journal.html">The Exile&#x27;s Journal</a>
+<a href="leveling.html">Leveling</a>
+<a href="coins-and-bank.html">Coins and the bank</a>
+<a href="quests.html">Quests</a>
+<a href="parties.html">Parties</a>
+<a href="mounts.html">Mounts</a>
+<a href="titles.html">Titles</a>
+<a href="death-and-safety.html">Death and safety</a>
+<a href="faq.html">FAQ</a>
+<h4>Classes &amp; stats</h4>
+<a href="classes.html">Classes</a>
+<a href="mage.html">Mage</a>
+<a href="archer.html">Archer</a>
+<a href="rogue.html">Rogue</a>
+<a href="warrior.html">Warrior</a>
+<a href="herald.html">Herald</a>
+<a href="skill-trees.html" class=cur>Skill trees</a>
+<a href="abilities.html">Abilities</a>
+<a href="stats.html">Stats</a>
+<a href="attributes.html">Attributes</a>
+<a href="prestige.html">Prestige</a>
+<h4>Gear &amp; forge</h4>
+<a href="gear.html">Gear</a>
+<a href="rarity.html">Rarity</a>
+<a href="weapons.html">Weapons</a>
+<a href="armour.html">Armour</a>
+<a href="sets.html">Sets</a>
+<a href="legendary-weapons.html">Legendary Weapons</a>
+<a href="relics.html">Extraordinary &amp; God&#x27;s Tool Weapons</a>
+<a href="orbs.html">Orbs</a>
+<a href="gems.html">Gems</a>
+<a href="forge.html">The Forge</a>
+<a href="ingredients.html">Ingredients &amp; Modifiers</a>
+<a href="amulets.html">Amulets</a></nav>
+<main><div class="crumb">Classes &amp; stats</div><h1>Skill trees</h1>
+<p class="lead">How the class perk trees work, including perk points, the trunk, the three branches, notables and keystones, the shared Trades nodes, refunds and resets.</p>
+<h2 id="the-perk-tree">The perk tree</h2>
+<p>Every class has its <strong>own perk tree</strong>. You spend <strong>perk points</strong> on it to shape your build: more damage for one ability, a tougher body, faster mana, or a keystone that changes how you play.</p>
+<ul>
+<li><strong>Open it</strong> with <strong>[✦ Perk Tree]</strong> on your character sheet (right-click your <a href="the-journal.html">Exile’s Journal</a>), or with <strong>[Passive Tree]</strong> in the level-up message.</li>
+<li><strong>Points:</strong> you get <strong>1 perk point per character level</strong> (see <a href="leveling.html">Leveling</a>). This is on top of the attribute point each level gives you for the <a href="stats.html">stat sheet</a>.</li>
+<li><strong>Before you pick a class</strong> you only see the bottom row (the Origin and the shared Trades nodes). Any points you don't spend wait for your class tree.</li>
+<li>The tree icons come from the resource pack.</li>
+</ul>
+<h2 id="the-shape">The shape</h2>
+<p>Every class tree is drawn the same way. Only the names and effects change:</p>
+<p><code>K-o-o-o-N N-o-K-o-N N-o-o-o-K
+      |   |       |   |
+N-o-N-o-o o-N-o-N-o o-o-N-o-N
+    |   | |   |   | |   |
+o-o-E-o-N o-o-E-o-o N-o-E-o-o
+    |         |         |
+    o---------o---------o
+              |
+              o
+              |
+  N-N-N-N-N-N-S-N-N-N-N</code></p>
+<ul>
+<li><strong>S, the Origin</strong>, sits on the bottom row. You always own it.</li>
+<li><strong>The trunk</strong> climbs from the Origin. Every class has the same trunk:</li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Type</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steady Breath</td>
+<td>small</td>
+<td>+20 max mana.</td>
+</tr>
+<tr>
+<td>Light Feet</td>
+<td>small (the hub)</td>
+<td>+4% move speed.</td>
+</tr>
+<tr>
+<td>Thick Hide</td>
+<td>small (left of the hub)</td>
+<td>+4 max health.</td>
+</tr>
+<tr>
+<td>Second Breath</td>
+<td>notable (right of the hub)</td>
+<td>+25% mana regeneration.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>The three branches</strong> are the grids on top. Each is 3 rows of 5 nodes. The <strong>left</strong> branch is entered from Thick Hide, the <strong>middle</strong> from Light Feet and the <strong>right</strong> from Second Breath, always through the bottom-middle node (E). Inside a branch there are several routes and loops. It holds 4 notables, and the <strong>keystone sits in the far top corner, six steps from the entry</strong>.</li>
+<li><strong>The Trades</strong> run left and right of the Origin on the bottom row (see below).</li>
+</ul>
+<h2 id="node-types">Node types</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Type</th>
+<th>Cost</th>
+<th>What it gives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>●</td>
+<td>Small</td>
+<td>1 point</td>
+<td><strong>+2 bonus levels</strong> in one of the branch's stats (<strong>+1</strong> for Might). Like gear bonuses, these can go past the cap of 50 but don't unlock perks or passives.</td>
+</tr>
+<tr>
+<td>◆</td>
+<td>Notable</td>
+<td>1 point</td>
+<td>A named effect, often an upgrade to one of your abilities.</td>
+</tr>
+<tr>
+<td>★</td>
+<td>Keystone</td>
+<td><strong>3 points</strong></td>
+<td>A big build-defining effect with a real downside.</td>
+</tr>
+</tbody>
+</table></div>
+<p>You can take <strong>any node that touches a node you own</strong>.</p>
+<h3 id="how-far-points-go">How far points go</h3>
+<ul>
+<li>One branch is 15 nodes and costs <strong>17 points</strong> (10 small, 4 notables, 1 keystone). The trunk costs 4.</li>
+<li>The fastest keystone is in the middle branch: 2 trunk nodes + 6 branch nodes + the 3-point keystone = <strong>11 points</strong>, so character level 12 (you earn your first point at level 2). A side branch needs one more trunk node (level 13).</li>
+<li>By level 40 you have 39 points: the trunk and about two full branches. All three branches take 55 points, so for most of your climb you have to choose.</li>
+</ul>
+<h2 id="each-classs-branches">Each class's branches</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Left (from Thick Hide)</th>
+<th>Middle (from Light Feet)</th>
+<th>Right (from Second Breath)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="mage.html">Mage</a></td>
+<td>Battlemage ★ Arcane Barrage</td>
+<td>Elementalist ★ Overcharge Mastery</td>
+<td>Warden ★ Blood Magic</td>
+</tr>
+<tr>
+<td><a href="archer.html">Archer</a></td>
+<td>Rain ★ Rain of Ruin</td>
+<td>Marksman ★ Deadeye Focus</td>
+<td>Skirmisher ★ Parting Shot</td>
+</tr>
+<tr>
+<td><a href="rogue.html">Rogue</a></td>
+<td>Assassin ★ Cutthroat</td>
+<td>Blade Dancer ★ Thousand Cuts</td>
+<td>Shadow ★ Ghost</td>
+</tr>
+<tr>
+<td><a href="warrior.html">Warrior</a></td>
+<td>Juggernaut ★ Iron Fortress</td>
+<td>Berserker ★ Berserker Oath</td>
+<td>Crusader ★ Titan's Grip</td>
+</tr>
+<tr>
+<td><a href="herald.html">Herald</a></td>
+<td>Choir ★ Chorus of the Stranded</td>
+<td>Cursebinder ★ Dirge</td>
+<td>Standard-Bearer ★ Last Stand</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every node and its exact text is on the class pages.</p>
+<h2 id="the-trades">The Trades</h2>
+<p>The <strong>Trades</strong> are shared by every class and kept when you change class. They form two chains that start next to the Origin. Each node costs 1 point, and you take them in order outwards from the Origin. You can buy Trades nodes even before you have a class.</p>
+<p><strong>Gathering chain (to the left of the Origin):</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Node</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Green Hands</td>
+<td>+10% bonus chance on every gathering skill.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Lucky Find</td>
+<td>+1 luck.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Stonecutter</td>
+<td>Haste I while holding a pickaxe.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Angler's Luck</td>
+<td>+2 luck while holding a fishing rod.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bountiful Life</td>
+<td>Double training XP for Mining, Logging, Farming, Fishing and Cooking.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Master Chef</td>
+<td>Eating cooked food gives a random 30 s buff: Speed, Haste, Strength or Regeneration.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Blacksmithing chain (to the right of the Origin):</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Node</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Forge Hand</td>
+<td>+1 gem roll on every piece you forge.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Steady Hammer</td>
+<td>+1 affix slot on every piece you forge.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Thrifty</td>
+<td>Combining at the forge takes 8, not 9.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Quick Kiln</td>
+<td>Blacksmithing XP +25%.</td>
+</tr>
+</tbody>
+</table></div>
+<p>See <a href="forge.html">Forge</a> for what gem rolls and affix slots mean.</p>
+<h2 id="refunds-and-resets">Refunds and resets</h2>
+<ul>
+<li><strong>Taking back one node is free</strong>, but only a node at the <strong>end of your path</strong> (one that touches just one other node you own). That way nothing you own gets cut off. In a loop, you unpick from one end. Click an owned node to refund it.</li>
+<li><strong>[Reset tree]</strong> refunds your whole class tree <em>and</em> your Trades. It costs <strong>25 gold coins per character level</strong> (level 20 = 500 coins). It is free while you own only one node.</li>
+<li><strong>Changing class</strong> refunds every point in your class tree <strong>for free</strong>. The new class starts with an empty tree, and your Trades nodes stay. See <a href="classes.html">Classes</a>.</li>
+</ul>
+<p>The stat sheet's <strong>[↺ Respec]</strong> is a different thing: it refunds attribute points, not perk points. See <a href="stats.html">Stats</a>.</p>
+<div class="pn"><a class="prev" href="herald.html"><small>← Previous</small>Herald</a><a class="next" href="abilities.html"><small>Next →</small>Abilities</a></div>
+<footer>Exile RPG wiki · written for datapack v0.31.3 and resource pack v0.7.3. Numbers are the pack's defaults.</footer></main>
+<aside class="toc"><b>On this page</b><a class="h2" href="#the-perk-tree">The perk tree</a><a class="h2" href="#the-shape">The shape</a><a class="h2" href="#node-types">Node types</a><a class="h3" href="#how-far-points-go">How far points go</a><a class="h2" href="#each-classs-branches">Each class&#x27;s branches</a><a class="h2" href="#the-trades">The Trades</a><a class="h2" href="#refunds-and-resets">Refunds and resets</a></aside></div>
+<script src="search-index.js"></script><script src="wiki.js"></script></body></html>

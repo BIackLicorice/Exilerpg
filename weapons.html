@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weapons · Exile RPG Wiki</title><meta name="description" content="Every weapon type, which class uses it, how weapon damage scales with level and rarity, and the full list of rolled weapon bases.">
+<link rel="icon" href="img/item_gear_journal.png"><link rel="stylesheet" href="wiki.css"></head>
+<body>
+<header><button id="menu" class="iconbtn" aria-label="Pages">☰</button>
+<a class="brand" href="index.html"><img src="img/item_gear_journal.png" alt=""><span>Exile RPG Wiki</span><small>pack v0.31.3</small></a>
+<div class="search"><input id="q" type="search" placeholder="Search the wiki  ( / )" autocomplete="off" aria-label="Search"><div id="res" class="results"></div></div>
+<button id="theme" class="iconbtn" aria-label="Light or dark" title="Light / dark">☀ / ☾</button></header>
+<div class="wrap"><nav class="side"><h4>Getting started</h4>
+<a href="index.html">Home</a>
+<a href="first-steps.html">First steps</a>
+<a href="the-journal.html">The Exile&#x27;s Journal</a>
+<a href="leveling.html">Leveling</a>
+<a href="coins-and-bank.html">Coins and the bank</a>
+<a href="quests.html">Quests</a>
+<a href="parties.html">Parties</a>
+<a href="mounts.html">Mounts</a>
+<a href="titles.html">Titles</a>
+<a href="death-and-safety.html">Death and safety</a>
+<a href="faq.html">FAQ</a>
+<h4>Classes &amp; stats</h4>
+<a href="classes.html">Classes</a>
+<a href="mage.html">Mage</a>
+<a href="archer.html">Archer</a>
+<a href="rogue.html">Rogue</a>
+<a href="warrior.html">Warrior</a>
+<a href="herald.html">Herald</a>
+<a href="skill-trees.html">Skill trees</a>
+<a href="abilities.html">Abilities</a>
+<a href="stats.html">Stats</a>
+<a href="attributes.html">Attributes</a>
+<a href="prestige.html">Prestige</a>
+<h4>Gear &amp; forge</h4>
+<a href="gear.html">Gear</a>
+<a href="rarity.html">Rarity</a>
+<a href="weapons.html" class=cur>Weapons</a>
+<a href="armour.html">Armour</a>
+<a href="sets.html">Sets</a>
+<a href="legendary-weapons.html">Legendary Weapons</a>
+<a href="relics.html">Extraordinary &amp; God&#x27;s Tool Weapons</a>
+<a href="orbs.html">Orbs</a>
+<a href="gems.html">Gems</a>
+<a href="forge.html">The Forge</a>
+<a href="ingredients.html">Ingredients &amp; Modifiers</a>
+<a href="amulets.html">Amulets</a></nav>
+<main><div class="crumb">Gear &amp; forge</div><h1>Weapons</h1>
+<p class="lead">Every weapon type, which class uses it, how weapon damage scales with level and rarity, and the full list of rolled weapon bases.</p>
+<h2 id="weapon-types-and-classes">Weapon types and classes</h2>
+<p>Each class casts its abilities through its own weapon types. Anyone can <em>swing</em> any weapon, but only the right class can cast with it.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Class</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sword</td>
+<td><a href="warrior.html">Warrior</a></td>
+<td>Balanced damage and speed</td>
+</tr>
+<tr>
+<td>Axe</td>
+<td><a href="warrior.html">Warrior</a></td>
+<td>About 30% more per hit than a sword, slower</td>
+</tr>
+<tr>
+<td>Mace</td>
+<td><a href="warrior.html">Warrior</a></td>
+<td>About 20% more per hit than a sword, slower</td>
+</tr>
+<tr>
+<td>Shield</td>
+<td><a href="warrior.html">Warrior</a></td>
+<td>Off hand. Gives armour instead of damage</td>
+</tr>
+<tr>
+<td>Dagger</td>
+<td><a href="rogue.html">Rogue</a></td>
+<td>About 25% less per hit than a sword, much faster</td>
+</tr>
+<tr>
+<td>Bow</td>
+<td><a href="archer.html">Archer</a></td>
+<td>No melee damage. Its <strong>Draw Power</strong> adds % arrow damage</td>
+</tr>
+<tr>
+<td>Staff</td>
+<td><a href="mage.html">Mage</a></td>
+<td>Kept weak in melee on purpose. A Mage's damage is in the spells</td>
+</tr>
+<tr>
+<td>Mage Blade</td>
+<td><a href="mage.html">Mage</a></td>
+<td>A light sword that casts like a staff. Hits for about 75% of a sword</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td><a href="herald.html">Herald</a></td>
+<td>The Herald's banner pole. Low melee, casts the Herald's hymns</td>
+</tr>
+</tbody>
+</table></div>
+<p>Weapons and shields always belong to their own type's class (a bow is always an Archer's), so they carry no "Made for" line. Only <a href="armour.html">armour</a> is rolled for a class.</p>
+<p><img class="icon" src="img/item_gear_w_levy_blade_normal.png" alt="Levy Blade" title="Levy Blade"> <img class="icon" src="img/item_gear_w_bog_chopper_normal.png" alt="Bog Chopper" title="Bog Chopper"> <img class="icon" src="img/item_gear_w_hedge_staff_normal.png" alt="Hedge Staff" title="Hedge Staff"> <img class="icon" src="img/item_gear_w_gutter_knife_normal.png" alt="Gutter Knife" title="Gutter Knife"> <img class="icon" src="img/item_gear_w_sapling_bow_normal_p0.png" alt="Sapling Bow" title="Sapling Bow"> <img class="icon" src="img/item_gear_w_inkblade_normal.png" alt="Inkblade" title="Inkblade"></p>
+<h2 id="how-weapon-damage-works">How weapon damage works</h2>
+<p>Damage, attack speed and Draw Power are rolled when the weapon is made. They come from:</p>
+<ul>
+<li><strong>Power</strong> = item level + rarity number (Common 1 … God's Tool 7).</li>
+<li><strong>The type's base and growth per power point.</strong></li>
+<li><strong>A quality roll</strong> inside the rarity's window (Common 85-100% up to God's Tool 115-130%). See <a href="rarity.html">rarity</a>.</li>
+<li><strong>The base's own damage %.</strong> Heavy bases hit harder and swing slower, and light ones the other way round.</li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Starts at</th>
+<th>Grows per power point</th>
+<th>Attack speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sword</td>
+<td>5</td>
+<td>+0.20</td>
+<td>about 1.6</td>
+</tr>
+<tr>
+<td>Axe</td>
+<td>6.5</td>
+<td>+0.26</td>
+<td>about 0.9</td>
+</tr>
+<tr>
+<td>Mace</td>
+<td>6</td>
+<td>+0.24</td>
+<td>about 0.9</td>
+</tr>
+<tr>
+<td>Dagger</td>
+<td>3.8</td>
+<td>+0.13</td>
+<td>about 2.4</td>
+</tr>
+<tr>
+<td>Mage Blade</td>
+<td>4</td>
+<td>+0.15</td>
+<td>about 1.7</td>
+</tr>
+<tr>
+<td>Staff</td>
+<td>2</td>
+<td>+0.03</td>
+<td>fist speed</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td>3</td>
+<td>+0.06</td>
+<td>fist speed</td>
+</tr>
+<tr>
+<td>Bow</td>
+<td>-</td>
+<td>+2% arrow damage (Draw Power)</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<p>Attack speed only moves a little: the type's speed ±5% at random, plus a tiny amount per power point. Your Ferocity is the real attack-speed stat.</p>
+<p><strong>A plain sword's damage</strong> (low-high of the quality window, before the base's own %):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Item level</th>
+<th>Common</th>
+<th>Uncommon</th>
+<th>Rare</th>
+<th>Mythic</th>
+<th>Legendary</th>
+<th>Extraordinary</th>
+<th>God's Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>4.6-5.4</td>
+<td>5.0-5.9</td>
+<td>5.5-6.4</td>
+<td>6.0-6.9</td>
+<td>6.5-7.4</td>
+<td>7.0-8.0</td>
+<td>7.6-8.6</td>
+</tr>
+<tr>
+<td>10</td>
+<td>6.1-7.2</td>
+<td>6.7-7.8</td>
+<td>7.2-8.4</td>
+<td>7.8-9.0</td>
+<td>8.4-9.6</td>
+<td>9.0-10.2</td>
+<td>9.7-10.9</td>
+</tr>
+<tr>
+<td>25</td>
+<td>8.7-10.2</td>
+<td>9.4-10.9</td>
+<td>10.1-11.7</td>
+<td>10.8-12.4</td>
+<td>11.6-13.2</td>
+<td>12.3-14.0</td>
+<td>13.1-14.8</td>
+</tr>
+<tr>
+<td>50</td>
+<td>12.9-15.2</td>
+<td>13.9-16.2</td>
+<td>14.8-17.2</td>
+<td>15.8-18.2</td>
+<td>16.8-19.2</td>
+<td>17.8-20.3</td>
+<td>18.9-21.3</td>
+</tr>
+</tbody>
+</table></div>
+<p>Your stats, perks and tree add to this. Might, for example, adds melee damage on top. See <a href="stats.html">stats</a>.</p>
+<p><strong>Below the weapon's item level it does nothing.</strong> No damage and no casting until your character level catches up (see <a href="gear.html">gear</a>).</p>
+<h2 id="rolled-weapon-bases">Rolled weapon bases</h2>
+<p>Each base has its own name, damage % and speed %, and a <strong>level band</strong>: it only drops once your character reaches that level. Later bases are slightly better at the same item level, about 1% per 5 band levels. Normal, Magic and Rare versions each have their own look, and the Rare look of many bases is animated.</p>
+<p>The original bases (Warblade, Cleaver, Templar Maul, Kite Shield, Shiv, Hunter's Bow, Arcane Staff, Assassin's Dagger, Mage Blade, Herald's Standard) still drop at every level.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Base</th>
+<th>Type</th>
+<th>Band</th>
+<th>Damage %</th>
+<th>Speed %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Warrior</td>
+<td>Levy Blade</td>
+<td>Sword</td>
+<td>1</td>
+<td>96</td>
+<td>104</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Bog Chopper</td>
+<td>Axe</td>
+<td>4</td>
+<td>106</td>
+<td>95</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Bell Hammer</td>
+<td>Mace</td>
+<td>8</td>
+<td>104</td>
+<td>98</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Exile Greatsword</td>
+<td>Sword</td>
+<td>12</td>
+<td>124</td>
+<td>83</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Tower Shield</td>
+<td>Shield</td>
+<td>12</td>
+<td>112 (armour)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Dane Axe</td>
+<td>Axe</td>
+<td>16</td>
+<td>118</td>
+<td>88</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Ram's Head</td>
+<td>Mace</td>
+<td>20</td>
+<td>112</td>
+<td>93</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Oathblade</td>
+<td>Sword</td>
+<td>25</td>
+<td>103</td>
+<td>102</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Headsman's Axe</td>
+<td>Axe</td>
+<td>30</td>
+<td>128</td>
+<td>83</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Grave Mattock</td>
+<td>Mace</td>
+<td>35</td>
+<td>130</td>
+<td>82</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Barrow Door</td>
+<td>Shield</td>
+<td>35</td>
+<td>120 (armour)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>Emberwrought Blade</td>
+<td>Sword</td>
+<td>40</td>
+<td>110</td>
+<td>98</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Hedge Staff</td>
+<td>Staff</td>
+<td>1</td>
+<td>100</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Mirelight Staff</td>
+<td>Staff</td>
+<td>4</td>
+<td>101</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Inkblade</td>
+<td>Mage Blade</td>
+<td>8</td>
+<td>98</td>
+<td>104</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Bone Wand</td>
+<td>Staff</td>
+<td>12</td>
+<td>102</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Sigil Sabre</td>
+<td>Mage Blade</td>
+<td>16</td>
+<td>106</td>
+<td>98</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Seer's Crook</td>
+<td>Staff</td>
+<td>20</td>
+<td>104</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Tower Sabre</td>
+<td>Mage Blade</td>
+<td>25</td>
+<td>100</td>
+<td>105</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Astral Spire</td>
+<td>Staff</td>
+<td>30</td>
+<td>106</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Quillsword</td>
+<td>Mage Blade</td>
+<td>35</td>
+<td>97</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>Ember Sceptre</td>
+<td>Staff</td>
+<td>40</td>
+<td>108</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Gutter Knife</td>
+<td>Dagger</td>
+<td>1</td>
+<td>95</td>
+<td>105</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Reed Knife</td>
+<td>Dagger</td>
+<td>4</td>
+<td>100</td>
+<td>101</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Cinquedea</td>
+<td>Dagger</td>
+<td>8</td>
+<td>112</td>
+<td>91</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Bodkin</td>
+<td>Dagger</td>
+<td>12</td>
+<td>92</td>
+<td>112</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Fang Knife</td>
+<td>Dagger</td>
+<td>16</td>
+<td>104</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Ledger Knife</td>
+<td>Dagger</td>
+<td>20</td>
+<td>99</td>
+<td>106</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Whisper Blade</td>
+<td>Dagger</td>
+<td>25</td>
+<td>108</td>
+<td>98</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Duskfang</td>
+<td>Dagger</td>
+<td>30</td>
+<td>95</td>
+<td>112</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Twin Fangs</td>
+<td>Dagger</td>
+<td>35</td>
+<td>116</td>
+<td>92</td>
+</tr>
+<tr>
+<td>Rogue</td>
+<td>Throatcutter</td>
+<td>Dagger</td>
+<td>40</td>
+<td>112</td>
+<td>96</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Sapling Bow</td>
+<td>Bow</td>
+<td>1</td>
+<td>100</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Reed Bow</td>
+<td>Bow</td>
+<td>4</td>
+<td>101</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Horn Bow</td>
+<td>Bow</td>
+<td>8</td>
+<td>102</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Composite Bow</td>
+<td>Bow</td>
+<td>12</td>
+<td>102</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Heron Bow</td>
+<td>Bow</td>
+<td>16</td>
+<td>103</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Siege Bow</td>
+<td>Bow</td>
+<td>20</td>
+<td>104</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Moonbow</td>
+<td>Bow</td>
+<td>25</td>
+<td>105</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Thornbow</td>
+<td>Bow</td>
+<td>30</td>
+<td>106</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Stormstring</td>
+<td>Bow</td>
+<td>35</td>
+<td>107</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Archer</td>
+<td>Elder Yew</td>
+<td>Bow</td>
+<td>40</td>
+<td>108</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Camp Banner</td>
+<td>Standard</td>
+<td>1</td>
+<td>100</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Road Pennant</td>
+<td>Standard</td>
+<td>4</td>
+<td>101</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Bell Pole</td>
+<td>Standard</td>
+<td>8</td>
+<td>102</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Choir Standard</td>
+<td>Standard</td>
+<td>12</td>
+<td>102</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Lantern Pole</td>
+<td>Standard</td>
+<td>16</td>
+<td>103</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Vesper Banner</td>
+<td>Standard</td>
+<td>20</td>
+<td>104</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Wayfarer's Ensign</td>
+<td>Standard</td>
+<td>25</td>
+<td>105</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Clarion Staff</td>
+<td>Standard</td>
+<td>30</td>
+<td>106</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Sunstandard</td>
+<td>Standard</td>
+<td>35</td>
+<td>107</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Herald</td>
+<td>Exile's Colours</td>
+<td>Standard</td>
+<td>40</td>
+<td>108</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<p>For bows, "damage %" is the base's Draw Power %. For shields it is the base's armour %.</p>
+<h2 id="named-weapons">Named weapons</h2>
+<p>Beyond rolled bases there are hand-made weapons with fixed stats:</p>
+<ul>
+<li><strong>Uniques that drop from monsters:</strong> Emberbrand (active <em>Ember Burst</em>: a ring of fire burns enemies within 4 blocks), Warcaller (<em>War Cry</em>: you and nearby allies gain Strength and Speed for 8s), Dawnhammer (<em>Holy Smite</em>: light strikes the first enemy you look at, up to 12 blocks), Ghostfang (<em>Phantom Lunge</em>: lunge forward and thrust a ghost blade about 6 blocks), Bulwark of Dawn (a shield) and The Rubber Chicken. Right-click to use an item's active skill.</li>
+<li><strong>Signature weapons</strong> drop from bosses. Each has its own ability, which takes your first ability key while you hold the weapon:</li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Weapon</th>
+<th>Type</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clanbreaker</td>
+<td>Axe</td>
+<td>A shockwave throws enemies within 5 blocks into the air and sunders their armour (-6 armour for 6s).</td>
+</tr>
+<tr>
+<td>Mycelial Greatbow</td>
+<td>Bow</td>
+<td>Charge for 1.5s, then loose 5 arrows at once, each dealing 50% of your arrow damage.</td>
+</tr>
+<tr>
+<td>Broodfang</td>
+<td>Dagger</td>
+<td>Slash the enemy in front of you and mark it with poison for 8s. The mark pulses, poisoning enemies within 3 blocks.</td>
+</tr>
+<tr>
+<td>Necrostaff</td>
+<td>Staff</td>
+<td>Raise 2 undead servants that fight for you for 20s (up to 4 at once).</td>
+</tr>
+<tr>
+<td>Defiling Staff</td>
+<td>Staff</td>
+<td>Plant a corpse mine where you look (up to 3). With 3 planted, right-click detonates them all.</td>
+</tr>
+<tr>
+<td>Blood Staff</td>
+<td>Staff</td>
+<td>For 2s, drain every hostile within 8 blocks. Each pulse that hits heals you.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong><a href="legendary-weapons.html">Legendary weapons</a>:</strong> 25 class-locked weapons with big fixed stats.</li>
+<li><strong><a href="relics.html">Extraordinary and God's Tool weapons</a>:</strong> 15 class-locked weapons, each with its own passive.</li>
+</ul>
+<p>Named weapons also get an item level when they drop, and their numbers follow that level like everything else.</p>
+<h2 id="skill-sockets">Skill sockets</h2>
+<p>A weapon with a <strong>skill socket</strong> can hold a <a href="gems.html">skill gem</a>, which then becomes your first ability while you hold it. Extraordinary and God's Tool weapons always have one. On other pieces you can add one at the <a href="forge.html">forge</a> with a Skill Socket Stone.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="gear.html">Gear</a> · <a href="rarity.html">Rarity</a> · <a href="armour.html">Armour</a> · <a href="forge.html">Forge</a> · <a href="abilities.html">Abilities</a></p>
+<div class="pn"><a class="prev" href="rarity.html"><small>← Previous</small>Rarity</a><a class="next" href="armour.html"><small>Next →</small>Armour</a></div>
+<footer>Exile RPG wiki · written for datapack v0.31.3 and resource pack v0.7.3. Numbers are the pack's defaults.</footer></main>
+<aside class="toc"><b>On this page</b><a class="h2" href="#weapon-types-and-classes">Weapon types and classes</a><a class="h2" href="#how-weapon-damage-works">How weapon damage works</a><a class="h2" href="#rolled-weapon-bases">Rolled weapon bases</a><a class="h2" href="#named-weapons">Named weapons</a><a class="h2" href="#skill-sockets">Skill sockets</a><a class="h2" href="#see-also">See also</a></aside></div>
+<script src="search-index.js"></script><script src="wiki.js"></script></body></html>
